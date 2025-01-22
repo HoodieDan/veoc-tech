@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import logo from '../assets/images/logo.svg'
-import Hamburger from 'hamburger-react'
+import Hamburger from 'hamburger-react';
 import { Fragment, useState } from "react";
+import { NavLink } from "react-router-dom";
+import logo from '../assets/images/logo.svg';
 
 function NavBar() {
 

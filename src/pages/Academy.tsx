@@ -1,11 +1,253 @@
-import React from 'react';
+import { ArrowForward } from "@mui/icons-material";
+import AIOnBricks from "../assets/images/pngs/ai-on-bricks.png";
+import FemaleSoftwareDev from "../assets/images/pngs/female-software-developer-working-on-laptop.png";
+import ManWithBooksAvatar from "../assets/images/pngs/man-with-books-avatar.png";
+import ManWorkinfTheServer from "../assets/images/pngs/man-working-the-server.png";
+import TwoWomenOneLaptop from "../assets/images/pngs/two-women-one-laptop.png";
+import WomanAvatar from "../assets/images/pngs/woman-avatar.png";
+import WomanLeanOnWall from "../assets/images/pngs/woman-lean-on-wall.png";
 
-const Academy: React.FC = () => {
-    return (
-        <div>
-            <h1>Welcome to the Academy</h1>
+const COURSES = [
+  "Software Engineering",
+  "Product Management",
+  "Product Design",
+  "Data Analysis",
+] as const;
+const FOOTER_LINKS = [
+  {
+    category: "Services",
+    links: [
+      { label: "Blog", href: "" },
+      { label: "Case Studies", href: "" },
+      { label: "Academy", href: "" },
+    ],
+  },
+  {
+    category: "Company",
+    links: [
+      { label: "About Us", href: "" },
+      { label: "Events", href: "" },
+      { label: "Community", href: "" },
+      { label: "Careers", href: "" },
+    ],
+  },
+  {
+    category: "Contact Us",
+    links: [
+      { label: "Feel free to get in touch with us", href: null },
+      { label: "Nigeria: +234 123 456 789", href: "" },
+      { label: "partnerships@enyata.com", href: "" },
+    ],
+  },
+] as const;
+
+const Academy = () => {
+  return (
+    <section className="academy">
+      <div className="academy__hero">
+        <div className="academy__hero__ellipse" />
+        <div className="academy__hero__ellipse" />
+        <div className="academy__hero__left">
+          <h2>
+            Empowering young Tech Enthusiast with the skills to create a better
+            future
+          </h2>
+          <p>
+            The Veoc Tech academy is dedicated to sparking the fire of learning
+            in the next generation
+          </p>
+          <a href="" title="Apply Now">
+            Apply Now
+          </a>
         </div>
-    );
+        <div className="academy__hero__right">
+          <img
+            src={TwoWomenOneLaptop}
+            alt="Two women one laptop"
+            width={692}
+            height={528}
+          />
+        </div>
+      </div>
+      <div className="academy__section-one">
+        <div className="academy__section-one__ellipse" />
+        <div className="academy__section-one__ellipse" />
+        <div className="academy__section-one__top">
+          <div>
+            <h2>
+              Learn from the best and stand a chance to work towards becoming an
+              expert in your chosen field
+            </h2>
+            <p>
+              Join a growing community of technologists learning and building
+              skillsets that will power the innovations of the future.
+            </p>
+          </div>
+          <div>
+            {COURSES.map((course) => (
+              <button key={course}>{course}</button>
+            ))}
+          </div>
+        </div>
+        <div className="academy__section-one__bottom">
+          <div>
+            <h3>Java Programming and Software Engineering</h3>
+            <p>
+              Take your first step towards a career in software development with
+              this introduction to Java- one of the most in-demand programming
+              languages and the foundation of the Android operating system.
+            </p>
+            <p>
+              Designed for beginners, this specialization will teach you core
+              programming concepts and equip you to write programs to solve
+              complex problems.
+            </p>
+          </div>
+          <div>
+            <img
+              src={FemaleSoftwareDev}
+              alt="Female software developer working on laptop"
+              height={456}
+              width={432}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="academy__section-two">
+        <div className="academy__section-two__ellipse" />
+        <div className="academy__section-two__ellipse" />
+        <div className="academy__section-two__top">
+          <h2>
+            We&apos;re building talents for the future with those who have
+            passion to create it
+          </h2>
+          <p>
+            Academy intakes are trained and mentored for six weeks by our
+            experienced team members after which they are given the opportunity
+            to gain experience on real projects
+          </p>
+        </div>
+        <div className="academy__section-two__bottom">
+          <img
+            src={WomanLeanOnWall}
+            alt="Woman leaning on a wall"
+            width={387}
+            height={480}
+          />
+          <img
+            src={ManWorkinfTheServer}
+            alt="Man woeking the server"
+            width={387}
+            height={480}
+          />
+          <img src={AIOnBricks} alt="AI on bricks" width={387} height={480} />
+        </div>
+      </div>
+      <div className="academy__section-three">
+        <div className="academy__section-three__ellipse" />
+        <div className="academy__section-three__ellipse" />
+        <div className="academy__section-three__left">
+          <h1>
+            Enroll to stand a chance to get our limited time only learning
+            experience (0 experience needed)
+          </h1>
+          <a
+            href=""
+            title="Get started"
+            className="academy__section-three__left__cta"
+          >
+            <div>
+              <span>Get started</span>
+              <ArrowForward className="academy__section-three__left__cta__arrow" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div className="academy__section-four">
+        <div className="academy__section-four__ellipse" />
+        <div className="academy__section-four__ellipse" />
+        <h2>What students are saying about the academy</h2>
+        <div className="academy__section-four__testimonials">
+          <div className="academy__section-four__testimonials__testimonial">
+            <div className="academy__section-four__testimonials__testimonial__header">
+              <img
+                src={WomanAvatar}
+                alt="Woman avatar"
+                height={70}
+                width={70}
+              />
+              <div>
+                <span>Cynthia Ilomeje</span>
+                <span>Frontend Engineer</span>
+              </div>
+            </div>
+            <p>
+              “I was a microbiology graduate with no prior knowledge of anything
+              software development when I started, I now and have been working
+              as a Software Engineer where I develop scalable web applications
+              thanks to the training I got in the academy.”
+            </p>
+          </div>
+          <div className="academy__section-four__testimonials__testimonial">
+            <div className="academy__section-four__testimonials__testimonial__header">
+              <img
+                src={ManWithBooksAvatar}
+                alt="Man with books avatar"
+                height={70}
+                width={70}
+              />
+              <div>
+                <span>Michael Adisa</span>
+                <span>Frontend Engineer</span>
+              </div>
+            </div>
+            <p>
+              “Enyata academy promised to give a roadmap to build a successful
+              career and teach necessary skills to get started on that path, in
+              four months and they did. I am now a Software Engineer specialised
+              in frontend development.”
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer className="academy__footer">
+        <div className="academy__footer__top">
+          <h2>
+            What will you
+            <br />
+            Build today?
+          </h2>
+          <p>
+            Leverage our world class engineering teams to get your
+            <br />
+            ideas and projects up and running quickly.
+          </p>
+          <a href="" title="Let's talk">
+            Let&apos;s talk
+          </a>
+        </div>
+        <div className="academy__footer__categories">
+          {FOOTER_LINKS.map(({ category, links }) => (
+            <div
+              className="academy__footer__categories__category"
+              key={category}
+            >
+              <span>{category}</span>
+              {links.map(({ label, href }, index) =>
+                href !== null ? (
+                  <a href={href} title={label} key={index}>
+                    <span>{label}</span>
+                  </a>
+                ) : (
+                  <span key={index}>{label}</span>
+                )
+              )}
+            </div>
+          ))}
+        </div>
+      </footer>
+    </section>
+  );
 };
 
 export default Academy;
