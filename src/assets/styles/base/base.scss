@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  line-height: 1;
+  font-family: $font-inter !important;
+  background-color: $color-black;
+  color: $color-white;
+  scroll-behavior: smooth;
+  height: auto;
+  $vw: 100vw;
+  font-size: calc($vw / 1920px * 24px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 18px);
+    overflow-x: hidden;
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 18px);
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: $font-cabinet;
+  $vw: 100vw;
+  font-size: calc($vw / 1920px * 80px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 75px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 52px);
+  }
+}
+
+h2 {
+  font-weight: 700;
+  $vw: 100vw;
+  font-family: $font-cabinet;
+  font-size: calc($vw / 1920px * 76px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 52px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 48px);
+  }
+}
+
+h3 {
+  font-weight: 700;
+  $vw: 100vw;
+  font-family: $font-cabinet;
+  font-size: calc($vw / 1920px * 35px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 35px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 32px);
+  }
+}
+
+h4 {
+  font-weight: 700;
+  $vw: 100vw;
+  font-family: $font-cabinet;
+  font-size: calc($vw / 1920px * 30px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 30px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 28px);
+  }
+}
+
+h5 {
+  font-weight: 600;
+  $vw: 100vw;
+  font-family: $font-cabinet;
+  font-size: calc($vw / 1920px * 24px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 24px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 22px);
+  }
+}
+
+h6 {
+  font-weight: 500;
+  $vw: 100vw;
+  font-family: $font-cabinet;
+  font-size: calc($vw / 1920px * 22px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 22px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 20px);
+  }
+}
+
+.page {
+  padding: 1rem;
+  z-index: z('content');
+}
+
+// body {
+//   font-family: $font-inter;
+//   background-color: $color-white;
+//   color: $color-black;
+  
+//   @include media('<phone') {
+//     overflow-x: hidden;
+//   }
+// }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+.page-btn {
+  margin: 2rem;
+
+  @include media('<phone') {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+input, textarea {
+  border: 1px solid $color-grey;
+  width: 100%;
+  border-radius: 5px;
+  padding: 14px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  color: $color-white;
+  font-family: $font-inter;
+  $vw: 100vw;
+  font-size: calc($vw / 1920px * 18px);
+  background: $color-white;
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 16px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 16px);
+  }
+
+  &[type='file'] {
+    width: 30%;
+
+    @include media('<small') {
+      width: 70%;
+    }
+  }
+
+  &::placeholder {
+    color: $color-grey;
+  }
+
+  &:focus {
+    border: 1px solid $color-white;
+    outline: none;
+  }
+}
+
+button {
+  padding: 16px 30px;
+  background: linear-gradient(115deg, #7C0CDF 27.2%, #430779 76.89%);
+  color: $color-white;
+  border-radius: 15px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+
+  &.outline {
+    background: none;
+    border: 1px solid $color-button-border;
+    border-radius: 30px;
+    color: $color-purple-text;
+  }
+}
+
+.desktop {
+  display: block !important;
+
+  @include media('<phone') {
+    display: none !important;
+  }
+}
+
+.mobile {
+  display: none !important;
+  
+  @include media('<phone') {
+    display: block !important;
+  }
+}
+
+.underlined__header {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 105%;
+    height: 2px;
+    background-color: $color-white;
+    width: 150px;
+  }
+}

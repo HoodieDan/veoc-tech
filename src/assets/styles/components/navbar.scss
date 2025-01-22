@@ -1,0 +1,106 @@
+nav {
+    .container.nav {
+        margin-top: 1.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border: 1px solid $color-nav-border;
+        border-radius: 60px;
+
+        .nav-link {
+            .logo-name {
+                padding-left: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        .logo {
+            z-index: 1000;
+        }
+
+        .mid-links {
+            .nav-link {
+                color: $color-white;
+                font-size: 0.8rem;
+
+                &:hover {
+                    color: $color-nav-border;
+                }
+            }
+        }
+
+        div.hamburger-react {
+            display: none;
+            z-index: z('hamburger');
+            div {
+                background-color: $color-black !important;
+
+                &:nth-of-type(2) {
+                    height: 2px !important;
+                }
+            }
+        }
+    }
+}
+
+div.backdrop.mobile {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s;
+    z-index: 10;
+
+    aside {
+        background-color: $color-black;
+        height: 100vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        z-index: 10;
+        padding: 5rem 1rem 8rem;
+        animation: openNav 0.3s ease-in-out 0 alternate;
+
+        .nav-link {
+            color: $color-white;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    div.right-links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        background-color: #FFF;
+        
+        div.top {
+            display: none;
+        }
+        .container.nav {  
+            div.mid-links {
+                display: none !important;
+            }
+            div.hamburger-react {
+                display: inline-block;
+            }
+        }
+    }
+    div.backdrop.mobile {
+        display: block;
+    }
+}
