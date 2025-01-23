@@ -49,14 +49,17 @@ const Academy = () => {
         <div className="academy__hero__ellipse" />
         <div className="academy__hero__left">
           <h1>
-            Empowering young Tech Enthusiast with the skills to create a better
-            future
+            Empowering young
+            <br /> Tech Enthusiast
+            <br /> with the skills to
+            <br /> create a better
+            <br /> future
           </h1>
           <p>
-            The Veoc Tech academy is dedicated to sparking the fire of learning
-            in the next generation
+            The Veoc Tech academy is dedicated to sparking the fire
+            <br /> of learning in the next generation
           </p>
-          <a href="" title="Apply Now">
+          <a href="" title="Apply Now" className="mt-1">
             Apply Now
           </a>
         </div>
@@ -64,8 +67,7 @@ const Academy = () => {
           <img
             src={TwoWomenOneLaptop}
             alt="Two women one laptop"
-            width={692}
-            height={528}
+            className="img-fluid h-100"
           />
         </div>
       </div>
@@ -76,26 +78,22 @@ const Academy = () => {
           <div>
             <h2>
               Learn from the best and
-              <br />
-              stand a chance to work
-              <br />
-              towards becoming an
-              <br />
-              expert in your chosen
-              <br />
-              field
+              <br /> stand a chance to work
+              <br /> towards becoming an
+              <br /> expert in your chosen
+              <br /> field
             </h2>
             <p>
               Join a growing community of technologists learning and
-              <br />
-              building skillsets that will power the innovations of
-              <br />
-              the future.
+              <br /> building skillsets that will power the innovations of
+              <br /> the future.
             </p>
           </div>
           <div>
             {COURSES.map((course) => (
-              <button key={course}>{course}</button>
+              <button key={course} className="text-nowrap">
+                {course}
+              </button>
             ))}
           </div>
         </div>
@@ -103,32 +101,25 @@ const Academy = () => {
           <div>
             <h2>
               Java Programming and Software
-              <br />
-              Engineering
+              <br /> Engineering
             </h2>
             <p>
               Take your first step towards a career in software
-              <br />
-              development with this introduction to Java- one of the most
-              <br />
-              in-demand programming languages and the foundation of
-              <br />
-              the Android operating system.
+              <br /> development with this introduction to Java- one of the most
+              <br /> in-demand programming languages and the foundation of
+              <br /> the Android operating system.
             </p>
             <p>
               Designed for beginners, this specialization will teach you core
-              <br />
-              programming concepts and equip you to write programs to
-              <br />
-              solve complex problems.
+              <br /> programming concepts and equip you to write programs to
+              <br /> solve complex problems.
             </p>
           </div>
           <div>
             <img
               src={FemaleSoftwareDev}
               alt="Female software developer working on laptop"
-              height={456}
-              width={432}
+              className="img-fluid h-100"
             />
           </div>
         </div>
@@ -139,17 +130,13 @@ const Academy = () => {
         <div className="academy__section-two__top">
           <h2>
             We&apos;re building talents for
-            <br />
-            the future with those who
-            <br />
-            have passion to create it
+            <br /> the future with those who
+            <br /> have passion to create it
           </h2>
           <p>
             Academy intakes are trained and mentored for six weeks by our
-            <br />
-            experienced team members after which they are given the
-            <br />
-            opportunity to gain experience on real projects
+            <br /> experienced team members after which they are given the
+            <br /> opportunity to gain experience on real projects
           </p>
         </div>
         <div className="academy__section-two__bottom">
@@ -162,8 +149,7 @@ const Academy = () => {
           <img
             src={ManWorkinfTheServer}
             alt="Man woeking the server"
-            width={387}
-            height={480}
+            className="img-fluid h-100"
           />
           <img src={AIOnBricks} alt="AI on bricks" width={387} height={480} />
         </div>
@@ -173,16 +159,11 @@ const Academy = () => {
         <div className="academy__section-three__ellipse" />
         <div className="academy__section-three__left">
           <h1>
-            Enroll to stand a<br />
-            chance to get
-            <br />
-            our limited time
-            <br />
-            only learning
-            <br />
-            experience (0
-            <br />
-            experience needed)
+            Enroll to stand a<br /> chance to get
+            <br /> our limited time
+            <br /> only learning
+            <br /> experience (0
+            <br /> experience needed)
           </h1>
           <a
             href=""
@@ -201,8 +182,7 @@ const Academy = () => {
         <div className="academy__section-four__ellipse" />
         <h1>
           What students are saying
-          <br />
-          about the academy
+          <br /> about the academy
         </h1>
         <div className="academy__section-four__testimonials">
           <div className="academy__section-four__testimonials__testimonial">
@@ -214,11 +194,11 @@ const Academy = () => {
                 width={70}
               />
               <div>
-                <span>Cynthia Ilomeje</span>
+                <span className="fw-semibold">Cynthia Ilomeje</span>
                 <span>Frontend Engineer</span>
               </div>
             </div>
-            <p>
+            <p className="fw-medium">
               “I was a microbiology graduate with no prior knowledge of anything
               software development when I started, I now and have been working
               as a Software Engineer where I develop scalable web applications
@@ -234,11 +214,11 @@ const Academy = () => {
                 width={70}
               />
               <div>
-                <span>Michael Adisa</span>
+                <span className="fw-semibold">Michael Adisa</span>
                 <span>Frontend Engineer</span>
               </div>
             </div>
-            <p>
+            <p className="fw-medium">
               “Enyata academy promised to give a roadmap to build a successful
               career and teach necessary skills to get started on that path, in
               four months and they did. I am now a Software Engineer specialised
@@ -251,13 +231,11 @@ const Academy = () => {
         <div className="academy__footer__top">
           <h1>
             What will you
-            <br />
-            Build today?
+            <br /> Build today?
           </h1>
           <p>
             Leverage our world class engineering teams to get your
-            <br />
-            ideas and projects up and running quickly.
+            <br /> ideas and projects up and running quickly.
           </p>
           <a href="" title="Let's talk">
             Let&apos;s talk
@@ -269,7 +247,7 @@ const Academy = () => {
               className="academy__footer__categories__category"
               key={category}
             >
-              <span>{category}</span>
+              <span className="fw-semibold">{category}</span>
               {links.map(({ label, href }, index) =>
                 href !== null ? (
                   <a href={href} title={label} key={index}>
