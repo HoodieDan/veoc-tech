@@ -22,19 +22,19 @@
     }
 }
 
-@mixin section-ellipse($x1, $x2, $x3, $x4) {
+@mixin section-ellipse($x1, $y1, $x2, $y2) {
     &:nth-child(1) {
         @include ellipse;
         right: 0;
         bottom: 0;
-        translate: $x1 $x2;
+        translate: $x1 $y1;
     }
 
     &:nth-child(2) {
         @include ellipse;
         bottom: 0;
         left: 0;
-        translate: $x3 $x4;
+        translate: $x2 $y2;
     }
 
     @include media('<phone') {
