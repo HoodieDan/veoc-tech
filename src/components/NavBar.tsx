@@ -15,8 +15,10 @@ function NavBar() {
         <Fragment>
             <nav>
                 <div className="container nav d-flex align-items-center justify-content-between">
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+
                     <NavLink to='/' className='d-flex logo align-items-center nav-link'>
-                        <img src={logo} alt="logo" />
+                        <img src={logo} className='img-fluid' alt="logo" />
                     </NavLink>
 
                     <div className="mid-links d-flex align-items-center">
@@ -29,8 +31,6 @@ function NavBar() {
                     <div className="right-links">
                         <button className="contact outline">Contact</button>
                     </div>
-
-                    <Hamburger toggled={isOpen} toggle={setOpen} />
                 </div>
             </nav>
 
