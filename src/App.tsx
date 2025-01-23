@@ -1,36 +1,35 @@
-import NavBar from './components/NavBar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage';
-import Services from './pages/Services';
-import Academy from './pages/Academy';
-import Portfolio from './pages/Portfolio';
-import ContactUs from './pages/Contact';
-import AppFooter from './components/AppFooter';
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './assets/styles/index.scss';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Routes, useLocation } from "react-router-dom";
+import "./App.css";
+import "./assets/styles/index.scss";
+import AppFooter from "./components/AppFooter";
+import NavBar from "./components/NavBar";
+import Academy from "./pages/Academy";
+import ContactUs from "./pages/Contact";
+import HomePage from "./pages/HomePage";
+import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
 
 function App() {
+  const { pathname } = useLocation();
 
   return (
     <>
-      <BrowserRouter>
-        <NavBar />
+      <NavBar />
 
-        <div className="routes">
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/services' element={<Services />} />
-            <Route path='/academy' element={<Academy />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/contactUs' element={<ContactUs />} />
-          </Routes>
-        </div>
+      <div className="routes">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/academy" element={<Academy />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+        </Routes>
+      </div>
 
-        <AppFooter />
-      </BrowserRouter>
+      {pathname !== "/academy" && <AppFooter />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
