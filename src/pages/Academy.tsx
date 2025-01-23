@@ -48,10 +48,10 @@ const Academy = () => {
         <div className="academy__hero__ellipse" />
         <div className="academy__hero__ellipse" />
         <div className="academy__hero__left">
-          <h2>
+          <h1>
             Empowering young Tech Enthusiast with the skills to create a better
             future
-          </h2>
+          </h1>
           <p>
             The Veoc Tech academy is dedicated to sparking the fire of learning
             in the next generation
@@ -75,12 +75,22 @@ const Academy = () => {
         <div className="academy__section-one__top">
           <div>
             <h2>
-              Learn from the best and stand a chance to work towards becoming an
-              expert in your chosen field
+              Learn from the best and
+              <br />
+              stand a chance to work
+              <br />
+              towards becoming an
+              <br />
+              expert in your chosen
+              <br />
+              field
             </h2>
             <p>
-              Join a growing community of technologists learning and building
-              skillsets that will power the innovations of the future.
+              Join a growing community of technologists learning and
+              <br />
+              building skillsets that will power the innovations of
+              <br />
+              the future.
             </p>
           </div>
           <div>
@@ -91,16 +101,26 @@ const Academy = () => {
         </div>
         <div className="academy__section-one__bottom">
           <div>
-            <h3>Java Programming and Software Engineering</h3>
+            <h2>
+              Java Programming and Software
+              <br />
+              Engineering
+            </h2>
             <p>
-              Take your first step towards a career in software development with
-              this introduction to Java- one of the most in-demand programming
-              languages and the foundation of the Android operating system.
+              Take your first step towards a career in software
+              <br />
+              development with this introduction to Java- one of the most
+              <br />
+              in-demand programming languages and the foundation of
+              <br />
+              the Android operating system.
             </p>
             <p>
               Designed for beginners, this specialization will teach you core
-              programming concepts and equip you to write programs to solve
-              complex problems.
+              <br />
+              programming concepts and equip you to write programs to
+              <br />
+              solve complex problems.
             </p>
           </div>
           <div>
@@ -118,13 +138,18 @@ const Academy = () => {
         <div className="academy__section-two__ellipse" />
         <div className="academy__section-two__top">
           <h2>
-            We&apos;re building talents for the future with those who have
-            passion to create it
+            We&apos;re building talents for
+            <br />
+            the future with those who
+            <br />
+            have passion to create it
           </h2>
           <p>
             Academy intakes are trained and mentored for six weeks by our
-            experienced team members after which they are given the opportunity
-            to gain experience on real projects
+            <br />
+            experienced team members after which they are given the
+            <br />
+            opportunity to gain experience on real projects
           </p>
         </div>
         <div className="academy__section-two__bottom">
@@ -148,8 +173,16 @@ const Academy = () => {
         <div className="academy__section-three__ellipse" />
         <div className="academy__section-three__left">
           <h1>
-            Enroll to stand a chance to get our limited time only learning
-            experience (0 experience needed)
+            Enroll to stand a<br />
+            chance to get
+            <br />
+            our limited time
+            <br />
+            only learning
+            <br />
+            experience (0
+            <br />
+            experience needed)
           </h1>
           <a
             href=""
@@ -166,7 +199,11 @@ const Academy = () => {
       <div className="academy__section-four">
         <div className="academy__section-four__ellipse" />
         <div className="academy__section-four__ellipse" />
-        <h2>What students are saying about the academy</h2>
+        <h1>
+          What students are saying
+          <br />
+          about the academy
+        </h1>
         <div className="academy__section-four__testimonials">
           <div className="academy__section-four__testimonials__testimonial">
             <div className="academy__section-four__testimonials__testimonial__header">
@@ -212,11 +249,11 @@ const Academy = () => {
       </div>
       <footer className="academy__footer">
         <div className="academy__footer__top">
-          <h2>
+          <h1>
             What will you
             <br />
             Build today?
-          </h2>
+          </h1>
           <p>
             Leverage our world class engineering teams to get your
             <br />
