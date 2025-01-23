@@ -1,11 +1,15 @@
 nav {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: z('nav');
+
     .container.nav {
         margin-top: 1.5rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         border: 1px solid $color-nav-border;
         border-radius: 60px;
-
         .nav-link {
             .logo-name {
                 padding-left: 0.5rem;
@@ -32,7 +36,7 @@ nav {
             display: none;
             z-index: z('hamburger');
             div {
-                background-color: $color-black !important;
+                background: $color-white !important;
 
                 &:nth-of-type(2) {
                     height: 2px !important;
@@ -44,7 +48,7 @@ nav {
 
 div.backdrop.mobile {
     display: none;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -52,12 +56,12 @@ div.backdrop.mobile {
     bottom: 0;
     backdrop-filter: blur(5px);
     transition: all 0.5s;
-    z-index: 10;
+    z-index: z('bg');
 
     aside {
-        background-color: $color-black;
-        height: 100vh;
-        width: 70%;
+        background-color: $color-page-bg;
+        height: 70vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -65,9 +69,8 @@ div.backdrop.mobile {
         top: 0;
         left: 0;
         text-align: center;
-        z-index: 10;
-        padding: 5rem 1rem 8rem;
-        animation: openNav 0.3s ease-in-out 0 alternate;
+        z-index: z('aside');
+        padding: 8rem 1rem 4rem;
 
         .nav-link {
             color: $color-white;
@@ -83,14 +86,6 @@ div.backdrop.mobile {
 
 @media (max-width: 768px) {
     nav {
-        position: sticky;
-        z-index: 1000;
-        top: 0;
-        background-color: #FFF;
-        
-        div.top {
-            display: none;
-        }
         .container.nav {  
             div.mid-links {
                 display: none !important;
