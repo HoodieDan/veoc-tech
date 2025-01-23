@@ -6,7 +6,7 @@
     width: 25rem;
     opacity: 0.4;
     position: absolute;
-    z-index: 0;
+    z-index: z('bg');
 }
 
 @mixin grid-col($cols) {
@@ -67,13 +67,8 @@
 
     >div:not(.academy__hero, .academy__section-four),
     footer {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-
-        @include media('<phone') {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     @include media('<phone') {
@@ -96,7 +91,7 @@
         &__left {
             display: grid;
             gap: 1rem;
-            z-index: 1;
+            z-index: z('content');
 
             @include media('<phone') {
                 z-index: auto;
@@ -123,7 +118,7 @@
         }
 
         &__right {
-            z-index: 1;
+            z-index: z('content');
         }
     }
 
@@ -141,7 +136,7 @@
         &__top {
             display: grid;
             gap: 2rem;
-            z-index: 1;
+            z-index: z('content');
 
             div {
                 &:nth-child(1) {
@@ -187,7 +182,7 @@
             @include grid-col(2);
             gap: 2rem;
             align-items: center;
-            z-index: 1;
+            z-index: z('content');
 
             @include media('<phone') {
                 @include grid-col(1);
@@ -220,7 +215,6 @@
         &__top {
             display: grid;
             gap: 1rem;
-            // width: 50%;
         }
 
         &__bottom {
@@ -229,7 +223,7 @@
             justify-items: center;
             gap: 1rem;
             width: 100%;
-            z-index: 1;
+            z-index: z('content');
 
             @include media('<phone') {
                 @include grid-col(1);
@@ -250,7 +244,7 @@
 
             &__cta {
                 width: fit-content;
-                z-index: 1;
+                z-index: z('content');
 
                 div {
                     display: flex;
@@ -290,7 +284,7 @@
             @include grid-col(3);
             align-items: start;
             gap: 6rem;
-            z-index: 1;
+            z-index: z('content');
 
             @include media('<phone') {
                 @include grid-col(1);
@@ -328,7 +322,7 @@
     &__footer {
         background: linear-gradient(30deg, #120621 45%, #481787 100%);
         @include section-grid(0 5rem);
-        z-index: 1;
+        z-index: z('content');
 
         @include media('<phone') {
             background: $color-page-bg;
