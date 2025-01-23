@@ -263,11 +263,11 @@ $background: #0B0214;
         display: grid;
         gap: 3rem;
         padding: 0 5rem;
+        z-index: 1;
 
         &__top {
             display: grid;
             gap: 1rem;
-            z-index: 1;
 
             a {
                 background: white;
