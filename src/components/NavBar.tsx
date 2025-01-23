@@ -29,7 +29,9 @@ function NavBar() {
                     </div>
 
                     <div className="right-links">
-                        <button className="contact outline">Contact</button>
+                        <NavLink to='/contactUs'>
+                            <button className="contact outline">Contact</button>
+                        </NavLink>
                     </div>
                 </div>
             </nav>
@@ -42,6 +44,11 @@ function NavBar() {
                             <NavLink onClick={toggleIsOpen} to='/services' className='nav-link'>Services</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/academy' className='nav-link'>Academy</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/portfolio' className='nav-link'>Portfolio</NavLink>
+                            {/* <div className="d-flex justify-content-center">
+                                <NavLink onClick={toggleIsOpen} to='/contactUs'>
+                                    <button className="contact outline">Contact</button>
+                                </NavLink>
+                            </div> */}
                         </aside>
                     </div>
                 )
