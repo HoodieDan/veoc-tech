@@ -1,0 +1,132 @@
+.home__page {
+    .our__works {
+        .project__images__div {
+            margin-left: calc((100vw - 1320px) / 2);
+            @include media('<mid') {
+                margin-left: calc((100vw - 1140px) / 2);
+            }
+            @include media('<big-tab') {
+                margin-left: calc((100vw - 960px) / 2);
+            }
+            @include media('<mini-tab') {
+                margin-left: calc((100vw - 720px) / 2);
+            }
+            @include media('<phone') {
+                margin-left: calc((100vw - 540px) / 2);
+            }
+            @include media('<small') {
+                margin-left: 0.75rem;
+            }
+
+            .project__images {
+                overflow-x: auto;
+                white-space: nowrap;
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                scrollbar-width: none;  /* Firefox */
+    
+                &::-webkit-scrollbar {
+                    display: none;  /* Safari and Chrome */
+                }
+    
+                img {
+                    height: 300px;
+
+                    @include media('<phone') {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+
+        .stats {
+            @include media('<phone') {
+                justify-content: center;
+            }
+
+            h1 {
+                $vw: 100vw;
+                font-size: calc($vw / 1920px * 150px);
+              
+                @include media('<phone') {
+                  font-size: calc($vw / 750px * 135px);
+                }
+              
+                @include media('<small') {
+                    display: block;
+                  font-size: calc($vw / 500px * 120px);
+                }
+            }
+        }
+    }
+
+    .why__work {
+        .cards {
+            .card {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(5px);
+                border-radius: 20px;
+                color: $color-white;
+            }
+        }
+
+        .features {
+            .desktop {
+                @include media('<mini-tab') {
+                    display: none;
+                }
+            }
+            h3 {
+                font-weight: 500;
+                line-height: 1.5;
+            }
+
+            .fields {
+                background: rgba(101, 2, 180, 0.2);
+                border-radius: 15px;
+                margin-left: 100px;
+
+                @include media('<phone') {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .partners {
+        .cards {
+            .card {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(5px);
+                border-radius: 20px;
+                color: $color-white;
+            }
+        }
+    }
+
+    .faqs {
+        .questions {
+            .question {
+                border-radius: 5px;
+                border: 1px solid $color-white;
+                padding: 16px 5px;
+                text-align: left;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(5px);
+                cursor: pointer;
+                margin-bottom: 7px;
+                
+                p {
+                    margin-top: 10px;
+                    font-weight: 500;
+                    line-height: 1.4;
+                }
+    
+                .arrow {
+                    img {
+                        transform: scale(0.7);
+                    }
+                }
+            }
+        }
+    }
+}

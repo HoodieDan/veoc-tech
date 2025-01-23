@@ -1,0 +1,54 @@
+div.footer {
+    .footer__top {
+        .row {
+            border-bottom: 1px solid $color-purple;
+        }
+    }
+
+    .container {
+        .row {
+            .col-lg-4 {
+                margin-bottom: 2rem;
+                
+                h6 {
+                    
+                    margin-bottom: 1.5rem;
+                }
+                .flex {
+                    a {
+                        img {
+                            width: 1.3rem;
+                        }
+                    }
+                }
+                .d-flex {
+                    img.contact-icon {
+                        width: 1rem;
+                        margin-right: 0.5rem;
+                    }
+                    p {
+                        font-weight: 500;
+                    }
+                }
+                a {
+                    font-weight: 500;
+                    color: $color-white;
+                }
+            }
+            .col-lg-2 {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                h5 {
+                    margin-bottom: 1.5rem;
+                }
+
+                .link {
+                    color: $color-white;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

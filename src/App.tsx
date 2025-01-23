@@ -5,6 +5,7 @@ import Services from './pages/Services';
 import Academy from './pages/Academy';
 import Portfolio from './pages/Portfolio';
 import ContactUs from './pages/Contact';
+import AppFooter from './components/AppFooter';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/index.scss';
@@ -26,7 +27,7 @@ function App() {
           </Routes>
         </div>
 
-        {/* <FooterSection /> */}
+        <AppFooter />
       </BrowserRouter>
     </>
   )
