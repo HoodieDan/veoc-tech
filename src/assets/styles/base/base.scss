@@ -27,41 +27,48 @@ html, body {
 
 section, .footer {
   background: 
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 30% 50% no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 50% 50% no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 100% 0% / 40% 40% no-repeat;
+    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 600px 600px no-repeat,
+    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 500px 500px no-repeat,
+    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 80% 20% / 750px 750px no-repeat;
   background-color: $color-page-bg;
 
   @include media('<phone') {
-    background: 
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 1600px 1600px no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 500px 500px no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 80% 20% / 750px 750px no-repeat;
+    background: none;
     background-color: $color-page-bg;
   }
 }
 
 .hero__section {
   background: 
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 30% 50% no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 50% 50% no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 100% 0% / 40% 40% no-repeat,
-    url('../../assets/images/hero-pattern.svg') no-repeat top center/contain;
+    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 600px 600px no-repeat,
+    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 500px 500px no-repeat,
+    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 80% 20% / 750px 750px no-repeat,
+    url('../../assets/images/hero-pattern.svg') no-repeat center center/contain;
   background-color: $color-page-bg;
   padding-top: 100px;
 
   @include media('<phone') {
-    background: 
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 1600px 1600px no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 500px 500px no-repeat,
-    radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 80% 20% / 750px 750px no-repeat,
-    url('../../assets/images/hero-pattern.svg') no-repeat top center/contain;
+    background: none;
     background-color: $color-page-bg;
   }
 }
 
 p {
   line-height: 1.5;
+}
+
+small {
+  $vw: 100vw;
+  font-size: calc($vw / 1920px * 18px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 14px);
+    overflow-x: hidden;
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 13px);
+  }
 }
 
 h1 {
@@ -266,7 +273,7 @@ button {
   display: none !important;
   
   @include media('<phone') {
-    display: auto !important;
+    display: block !important;
   }
 }
 

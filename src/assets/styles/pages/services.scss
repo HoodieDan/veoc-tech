@@ -1,0 +1,111 @@
+.services__page {
+    .hero__section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .scattered__images {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 110vh;
+        padding-top: 10vh;
+
+        .row {
+            &:nth-of-type(1) {
+                img {
+                    height: 45vh;
+                    width: auto;
+        
+                    &:nth-of-type(1) {
+                        left: -7vw;
+                        position: absolute;
+                        transform: rotate(-15deg);
+                    }
+                    &:nth-of-type(2) {
+                        transform: rotate(15deg);
+                        z-index: z('bg');
+                    }
+                    &:nth-of-type(3) {
+                        right: -7vw;
+                        position: absolute;
+                        transform: rotate(10deg);
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                img {
+                    height: 40vh;
+                    width: 40vw;
+        
+                    &:nth-of-type(1) {
+                        left: -7vw;
+                        position: absolute;
+                        transform: rotate(-15deg);
+                    }
+                    &:nth-of-type(2) {
+                        transform: rotate(-5deg);
+                        z-index: z('content');
+                    }
+                    &:nth-of-type(3) {
+                        right: -7vw;
+                        position: absolute;
+                        transform: rotate(10deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .the__problem {
+        .pill {
+            border: 1px solid $color-purple;
+            border-radius: 32px;
+            color: $color-purple;
+        }
+    }
+
+    .our__solution {
+        .pill {
+            border: 1px solid $color-white;
+            border-radius: 32px;
+        }
+    }
+
+    .pricing {
+        .pill {
+            border: 1px solid $color-white;
+            border-radius: 32px;
+            white-space: nowrap;
+        }
+
+        .row {
+            .price__card {
+                border: 1px solid $color-purple;
+                border-radius: 15px;
+
+                .pill {
+                    display: inline-block;
+                }
+
+                .outline {
+                    border-color: $color-white;
+                    color: $color-white;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        .testimonial {
+            width: 60%;
+
+            @include media('<phone') {
+                width: 100%;
+            }
+        }
+    }
+}
