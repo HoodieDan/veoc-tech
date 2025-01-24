@@ -90,15 +90,15 @@ const HomePage: React.FC = () => {
                     <h2>Building Websites & Products that combine <span className="purple">aesthetics</span>, <span className="purple">functionality</span> to deliver great <span className="purple">results</span></h2>
 
                     <div className="stats d-flex flex-wrap">
-                        <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 mx-5 mt-5">
+                        <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 me-5 mt-5">
                             <h1 className='mb-4'>40+</h1>
                             <p>Finalized Projects</p>
                         </div>
-                        <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 mx-5 mt-5">
+                        <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 me-5 mt-5">
                             <h1 className='mb-4'>96%</h1>
                             <p>Conversion Rate Improvement</p>
                         </div>
-                        <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 mx-5 mt-5">
+                        <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 me-5 mt-5">
                             <h1 className='mb-4'>6+</h1>
                             <p>Years of Experience</p>
                         </div>
