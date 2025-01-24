@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.svg';
 function AppFooter() {
     return (
         <div className="footer py-2">
-            <div className="footer__top">
+            <div className="footer__top desktop">
                 <div className="container">
                     <div className="row py-5">
                         <div className="col-lg-5">
@@ -26,11 +26,14 @@ function AppFooter() {
                         <div className="d-flex align-items-center mb-3">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p className='mb-3'>
+                        <p className='mb-4'>
                             Building innovative products that meets
                             business demands and serves 
                             customers well.
                         </p>
+                        <button className="book phone mb-3">
+                            Book your spot now
+                        </button>
                     </div>
                     <div className="col-lg-2">
                         <h6 className='mb-3'>Quick Links</h6>

@@ -40,7 +40,7 @@
 
         .stats {
             @include media('<phone') {
-                justify-content: center;
+                justify-content: flex-start;
             }
 
             h1 {
