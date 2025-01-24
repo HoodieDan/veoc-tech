@@ -19,7 +19,7 @@ const FOOTER_LINKS = [
     links: [
       { label: "Blog", href: "" },
       { label: "Case Studies", href: "" },
-      { label: "Academy", href: "" },
+      { label: "Academy", href: "/academy" },
     ],
   },
   {

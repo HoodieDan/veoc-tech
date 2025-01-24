@@ -1,0 +1,132 @@
+%flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us {
+    background: $color-page-bg;
+    padding: 10rem 5rem;
+    position: relative;
+    overflow: hidden;
+
+    @include media('<phone') {
+        br {
+            display: none;
+        }
+
+        padding: 10rem 0;
+    }
+
+    &__ellipse {
+        @include section-ellipse(30%, -100%, -20%, 0);
+    }
+
+    &__container {
+        @include section-grid(0, $gap: 3rem);
+        max-width: 90%;
+        margin: 0 auto;
+        z-index: z('content');
+
+        @include media('<mini-tab') {
+            max-width: 100%;
+        }
+
+        @include media('<phone') {
+            z-index: auto;
+        }
+
+        &__bottom {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            @include media('<phone') {
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            &__left {
+                @extend %flex-col;
+                gap: 2.5rem;
+
+                &__header {
+                    p {
+                        color: $color-grey;
+                    }
+                }
+
+                &__links {
+                    display: grid;
+                    @include grid-col(2);
+                    gap: 2rem;
+
+                    @include media('<phone') {
+                        @include grid-col(1);
+                    }
+
+                    &__item {
+                        @extend %flex-col;
+
+                        a {
+                            span {
+                                color: $color-grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__right {
+                width: 40%;
+
+                @include media('<phone') {
+                    width: 100%;
+                }
+
+                p {
+                    color: $color-grey;
+                }
+
+                form {
+                    @extend %flex-col;
+                    gap: 0.8rem;
+
+                    input {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid $color-grey;
+                        border-radius: 0;
+                        font-size: 1rem;
+                        margin: 0;
+                        padding: 1rem 0;
+
+                        &::placeholder {
+                            color: $color-grey;
+                        }
+
+                        &:focus::placeholder {
+                            color: $color-white;
+                        }
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+
+                    button {
+                        @include transition;
+                        background: transparent;
+                        border-radius: 9999px;
+                        outline: 1px solid $color-white;
+                        width: fit-content;
+
+                        &:hover {
+                            background: $color-white;
+                            color: $color-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -29,7 +29,7 @@ function NavBar() {
                     </div>
 
                     <div className="right-links">
-                        <NavLink to='/contactUs'>
+                        <NavLink to='/contact-us'>
                             <button className="contact outline">Contact</button>
                         </NavLink>
                     </div>
