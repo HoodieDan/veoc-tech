@@ -55,6 +55,34 @@ section, .footer {
 
 p {
   line-height: 1.5;
+
+  &.big {
+    $vw: 100vw;
+    font-size: calc($vw / 1920px * 24px);
+
+    @include media('<phone') {
+      font-size: calc($vw / 750px * 20px);
+      overflow-x: hidden;
+    }
+
+    @include media('<small') {
+      font-size: calc($vw / 500px * 20px);
+    }
+  }
+
+  &.bigger {
+    $vw: 100vw;
+    font-size: calc($vw / 1920px * 32px);
+
+    @include media('<phone') {
+      font-size: calc($vw / 750px * 32px);
+      overflow-x: hidden;
+    }
+
+    @include media('<small') {
+      font-size: calc($vw / 500px * 30px);
+    }
+  }
 }
 
 small {
@@ -246,7 +274,7 @@ button {
   align-items: center;
   cursor: pointer;
   font-weight: 500;
-  outline: 5px solid $color-purple-text;
+  outline: 5px solid rgba(101, 2, 180, 0.2);;
 
   &.outline {
     background: none;

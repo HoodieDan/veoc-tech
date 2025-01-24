@@ -64,6 +64,9 @@
             border: 1px solid $color-purple;
             border-radius: 32px;
             color: $color-purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -71,6 +74,9 @@
         .pill {
             border: 1px solid $color-white;
             border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -79,6 +85,9 @@
             border: 1px solid $color-white;
             border-radius: 32px;
             white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .row {
@@ -88,6 +97,9 @@
 
                 .pill {
                     display: inline-block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 .outline {
