@@ -143,15 +143,18 @@ const Academy = () => {
           <img
             src={WomanLeanOnWall}
             alt="Woman leaning on a wall"
-            width={387}
-            height={480}
+            className="img-fluid h-100"
           />
           <img
             src={ManWorkinfTheServer}
-            alt="Man woeking the server"
+            alt="Man working the server"
             className="img-fluid h-100"
           />
-          <img src={AIOnBricks} alt="AI on bricks" width={387} height={480} />
+          <img
+            src={AIOnBricks}
+            alt="AI on bricks"
+            className="img-fluid h-100"
+          />
         </div>
       </div>
       <div className="academy__section-three">
@@ -190,8 +193,7 @@ const Academy = () => {
               <img
                 src={WomanAvatar}
                 alt="Woman avatar"
-                height={70}
-                width={70}
+                className="img-fluid"
               />
               <div>
                 <span className="fw-semibold">Cynthia Ilomeje</span>
@@ -210,8 +212,7 @@ const Academy = () => {
               <img
                 src={ManWithBooksAvatar}
                 alt="Man with books avatar"
-                height={70}
-                width={70}
+                className="img-fluid"
               />
               <div>
                 <span className="fw-semibold">Michael Adisa</span>

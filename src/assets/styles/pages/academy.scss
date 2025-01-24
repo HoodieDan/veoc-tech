@@ -1,5 +1,4 @@
 .academy {
-    background: $color-page-bg;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -84,7 +83,7 @@
                     padding: 1px 2rem;
 
                     @include media('<phone') {
-                        padding: 1px;
+                        padding: 2px;
                     }
 
                     button {
