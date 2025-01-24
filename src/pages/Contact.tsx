@@ -8,6 +8,8 @@ const CONTACT_LINKS = [
 const ContactUs = () => {
   return (
     <section className="contact-us">
+      <div className="contact-us__ellipse" />
+      <div className="contact-us__ellipse" />
       <div className="contact-us__container">
         <div className="contact-us__container__top">
           <h2 className="mb-4 text-md-center">
