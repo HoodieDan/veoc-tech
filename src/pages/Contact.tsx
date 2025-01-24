@@ -5,7 +5,7 @@ const CONTACT_LINKS = [
   { category: "Social Media", link: { label: "+234 90 12345678", href: "" } },
 ] as const;
 
-const Contact = () => {
+const ContactUs = () => {
   return (
     <section className="contact-us">
       <div className="contact-us__container">
@@ -78,4 +78,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
