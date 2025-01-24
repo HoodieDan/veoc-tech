@@ -3,6 +3,9 @@ import heroImg from '../assets/images/hero-img.png';
 import projectWatersmith from '../assets/images/project-watersmith.png';
 import projectPromptGuardian from '../assets/images/project-prompt-guardian.png';
 import projectGlobalink from '../assets/images/project-globalink.png';
+import projectTheVault from '../assets/images/mystery-box.png';
+import projectLease from '../assets/images/project-lease.png';
+import projectIdkk from '../assets/images/tobyteq.png';
 import check from '../assets/images/check.svg';
 import star from '../assets/images/star.svg';
 import stopwatch from '../assets/images/stopwatch.svg';
@@ -84,6 +87,9 @@ const HomePage: React.FC = () => {
                         <img src={projectWatersmith} alt="watersmith project image" className="me-4" style={{ display: 'inline-block' }} />
                         <img src={projectPromptGuardian} alt="prompt guardian project image" className="me-4" style={{ display: 'inline-block' }} />
                         <img src={projectGlobalink} alt="globalink project image" className="me-4" style={{ display: 'inline-block' }} />
+                        <img src={projectTheVault} alt="the vault project image" className="me-4" style={{ display: 'inline-block' }} />
+                        <img src={projectIdkk} alt="tobyteq project image" className="me-4" style={{ display: 'inline-block' }} />
+                        <img src={projectLease} alt="lease project image" className="me-4" style={{ display: 'inline-block' }} />
                     </div>
                 </div>
                 <div className="container py-5">

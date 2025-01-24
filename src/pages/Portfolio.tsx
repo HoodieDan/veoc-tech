@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => {
     return (
         <div className="portfolio">
             <section className="hero">
-                <div className="container d-flex flex-column justify-content-center align-items-center p-5 text-center">
+                <div className="container d-flex flex-column justify-content-center align-items-center p-5 text-lg-center text-md-center">
                     <h1>
                         A design agency that prioritizes depth 
                         over scale, creativity over trends and
