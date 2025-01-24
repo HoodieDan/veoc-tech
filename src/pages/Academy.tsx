@@ -140,21 +140,27 @@ const Academy = () => {
           </p>
         </div>
         <div className="academy__section-two__bottom">
-          <img
-            src={WomanLeanOnWall}
-            alt="Woman leaning on a wall"
-            className="img-fluid h-100"
-          />
-          <img
-            src={ManWorkinfTheServer}
-            alt="Man working the server"
-            className="img-fluid h-100"
-          />
-          <img
-            src={AIOnBricks}
-            alt="AI on bricks"
-            className="img-fluid h-100"
-          />
+          <div>
+            <img
+              src={WomanLeanOnWall}
+              alt="Woman leaning on a wall"
+              className="img-fluid h-100"
+            />
+          </div>
+          <div>
+            <img
+              src={ManWorkinfTheServer}
+              alt="Man working the server"
+              className="img-fluid h-100"
+            />
+          </div>
+          <div>
+            <img
+              src={AIOnBricks}
+              alt="AI on bricks"
+              className="img-fluid h-100"
+            />
+          </div>
         </div>
       </div>
       <div className="academy__section-three">
@@ -190,11 +196,7 @@ const Academy = () => {
         <div className="academy__section-four__testimonials">
           <div className="academy__section-four__testimonials__testimonial">
             <div className="academy__section-four__testimonials__testimonial__header">
-              <img
-                src={WomanAvatar}
-                alt="Woman avatar"
-                className="img-fluid"
-              />
+              <img src={WomanAvatar} alt="Woman avatar" className="img-fluid" />
               <div>
                 <span className="fw-semibold">Cynthia Ilomeje</span>
                 <span>Frontend Engineer</span>

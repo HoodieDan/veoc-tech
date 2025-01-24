@@ -152,7 +152,6 @@
             @include grid-col(3);
             justify-items: center;
             gap: 1rem;
-            width: 100%;
             z-index: z('content');
 
             @include media('<phone') {
