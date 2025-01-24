@@ -1,8 +1,8 @@
 const CONTACT_LINKS = [
-  { category: "Phone Number", link: { label: "+234 90 12345678", href: "" } },
+  { category: "Phone Number", link: { label: "+234 9012345678", href: "" } },
   { category: "Our Location", link: { label: "Lagos, Nigeria.", href: "" } },
-  { category: "Email", link: { label: "Veoc.Tech@gmail.com", href: "" } },
-  { category: "Social Media", link: { label: "+234 90 12345678", href: "" } },
+  { category: "Email", link: { label: "veoctech@gmail.com", href: "" } },
+  { category: "Social Media", link: { label: "+234 9012345678", href: "" } },
 ] as const;
 
 const ContactUs = () => {
