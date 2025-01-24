@@ -85,6 +85,12 @@ p {
   }
 }
 
+br {
+  @include media('<phone') {
+    visibility: hidden;
+  }
+}
+
 small {
   $vw: 100vw;
   font-size: calc($vw / 1920px * 18px);
