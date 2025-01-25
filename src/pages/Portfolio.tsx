@@ -4,7 +4,7 @@ import projectPromptGuardian from '../assets/images/project-prompt-guardian.png'
 import projectGlobalink from '../assets/images/project-globalink.png';
 import projectTheVault from '../assets/images/mystery-box.png';
 import projectLease from '../assets/images/project-lease.png';
-import projectIdkk from '../assets/images/tobyteq.png';
+import projectTobyTeq from '../assets/images/tobyteq.png';
 
 const Portfolio: React.FC = () => {
     return (
@@ -191,7 +191,7 @@ const Portfolio: React.FC = () => {
 
                         <div className="col-lg-8 col-md-8 mt-lg-3 mt-3">
                             <div className="project__image">
-                                <img src={projectIdkk} alt="tobyteq project" className='img-fluid' />
+                                <img src={projectTobyTeq} alt="tobyteq project" className='img-fluid' />
                             </div>
                         </div>
                     </div>  
