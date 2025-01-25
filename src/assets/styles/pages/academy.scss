@@ -1,8 +1,11 @@
 .academy {
-    background: $color-page-bg;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+
+    img {
+        object-fit: cover;
+    }
 
     >div:not(.academy__hero, .academy__section-four),
     footer {
@@ -84,7 +87,7 @@
                     padding: 1px 2rem;
 
                     @include media('<phone') {
-                        padding: 1px;
+                        padding: 2px;
                     }
 
                     button {
@@ -153,7 +156,6 @@
             @include grid-col(3);
             justify-items: center;
             gap: 1rem;
-            width: 100%;
             z-index: z('content');
 
             @include media('<phone') {
