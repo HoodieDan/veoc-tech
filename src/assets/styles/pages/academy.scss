@@ -3,6 +3,10 @@
     flex-direction: column;
     overflow-x: hidden;
 
+    img {
+        object-fit: cover;
+    }
+
     >div:not(.academy__hero, .academy__section-four),
     footer {
         padding-top: 4rem;

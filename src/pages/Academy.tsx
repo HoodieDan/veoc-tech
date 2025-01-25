@@ -67,7 +67,7 @@ const Academy = () => {
           <img
             src={TwoWomenOneLaptop}
             alt="Two women one laptop"
-            className="img-fluid h-100"
+            className="img-fluid"
           />
         </div>
       </div>
@@ -119,7 +119,7 @@ const Academy = () => {
             <img
               src={FemaleSoftwareDev}
               alt="Female software developer working on laptop"
-              className="img-fluid h-100"
+              className="img-fluid"
             />
           </div>
         </div>
@@ -144,22 +144,18 @@ const Academy = () => {
             <img
               src={WomanLeanOnWall}
               alt="Woman leaning on a wall"
-              className="img-fluid h-100"
+              className="img-fluid"
             />
           </div>
           <div>
             <img
               src={ManWorkinfTheServer}
               alt="Man working the server"
-              className="img-fluid h-100"
+              className="img-fluid"
             />
           </div>
           <div>
-            <img
-              src={AIOnBricks}
-              alt="AI on bricks"
-              className="img-fluid h-100"
-            />
+            <img src={AIOnBricks} alt="AI on bricks" className="img-fluid" />
           </div>
         </div>
       </div>
