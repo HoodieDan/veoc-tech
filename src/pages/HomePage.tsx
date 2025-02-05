@@ -21,31 +21,31 @@ const HomePage: React.FC = () => {
         const faqs = [
             {
                 question: 'How do I get started?',
-                answer: 'Yeah'
+                answer: 'You can either choose a plan , pay upfront and we get to work straight away or you can choose to set up a call where we can understand your needs better and you also get to know more about us.'
             },
             {
                 question: 'How does it work?',
-                answer: 'Yeah'
+                answer: 'We are using Slack to communicate with our clients, we’re being transparent and keeping our clients updated daily with our progress. You can also send to us your ideas, moodboards, guidelines or wireframe if you already established a base on your product.'
             },
             {
                 question: 'What if I dont like the design?',
-                answer: 'Yes'
+                answer: 'We’re always iterating until you’re happy with the results. If there are things that may break functionality or accessibility , we’ll provide relevant explanations on why we choose to make these decisions. Sometimes in design, we need to make these trade-offs in order to ensure great functionality to the end user. '
             },
             {
                 question: 'I already have a Figma project. Can you develop it?',
-                answer: 'Yessir'
+                answer: 'We can do that too, we can re-work and integrate in Framer your Figma file and create responsive design for it as well of you only have desktop versions. Pricing starts from $999 and it adds to it based on complexity or if it’s a single landing page or an entire multi-page website.'
             },
             {
                 question: 'Can you do mobile apps?',
-                answer: 'Yep'
+                answer: 'Yes we can design mobile and desktop apps for iOS & Mac OS. We only offer design services for these, we do not offer development. '
             },
             {
                 question: 'How about deliverables?',
-                answer: 'Yep'
+                answer: 'The way we are delivering the website to you is by providing a remix link , you can then directly add it to your Framer account, add your domain and update other relevant settings if necessary.'
             },
             {
                 question: 'Do you offer refunds?',
-                answer: 'No'
+                answer: 'Due to the nature of our work, spending tens of hours to deliver exceptional results, we cannot offer refunds, but rest assured that we will do our best to make sure you are satisfied with the end result. We are passionate about what we are doing and seeing our customers happy only makes us deliver beyond expectations.'
             },
         ]
 
