@@ -143,15 +143,15 @@ const HomePage: React.FC = () => {
                     </div>
 
                     <div className="row features py-3">
-                        <div className="col-lg-4 col-md-6 mt-lg-3 mt-5">
-                            <h3>User Interface</h3>
-                            <h3 className="mt-2">User Experience</h3>
-                            <h3 className="mt-2">Responsive Design</h3>
-                            <h3 className="mt-2">Custom Code</h3>
-                            <h3 className="mt-2">Component Libraries</h3>
-                            <h3 className="mt-2">Desktop & Mobile Apps</h3>
-                            <h3 className="mt-2">Website Migration</h3>
-                            <h3 className="mt-2">Figma to Framer</h3>
+                        <div className="col-lg-4 col-md-6 mt-lg-3 mt-5 d-flex flex-column justify-content-between">
+                            <h4>User Interface</h4>
+                            <h4 className="mt-2">User Experience</h4>
+                            <h4 className="mt-2">Responsive Design</h4>
+                            <h4 className="mt-2">Custom Code</h4>
+                            <h4 className="mt-2">Component Libraries</h4>
+                            <h4 className="mt-2">Desktop & Mobile Apps</h4>
+                            <h4 className="mt-2">Website Migration</h4>
+                            <h4 className="mt-2">Figma to Framer</h4>
                         </div>
                         <div className="col-lg-4 col-0 desktop"></div>
                         <div className="col-lg-4 col-md-6 mt-lg-3 mt-5 ps-lg-4">
