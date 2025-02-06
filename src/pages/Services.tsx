@@ -15,7 +15,7 @@ const Services: React.FC = () => {
     return (
         <div className='services__page'>
             <section className="hero__section">
-                <div className="container d-flex flex-column justify-content-center align-items-center p-5 text-center">
+                <div className="container d-flex flex-column justify-content-center align-items-center py-5 text-center">
                     <h1>
                         The go to Agency for High converting websites and <span className="purple">great visuals to beat your competitors</span>
                     </h1>

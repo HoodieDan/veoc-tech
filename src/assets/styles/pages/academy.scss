@@ -1,7 +1,6 @@
 .academy {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 
     h1 {
         $vw: 100vw;
@@ -39,10 +38,6 @@
             padding: 10rem 1rem 4rem;
         }
 
-        &__ellipse {
-            @include section-ellipse(50%, -50%, -50%, 50%);
-        }
-
         &__left {
             display: grid;
             gap: 1rem;
@@ -70,14 +65,10 @@
     }
 
     &__section-one {
-        @include section-grid(0 4rem);
+        @include section-grid(3rem 4rem);
 
         @include media('<phone') {
             gap: 4rem;
-        }
-
-        &__ellipse {
-            @include section-ellipse(50%, -100%, -50%, 50%);
         }
 
         &__top {
@@ -147,17 +138,23 @@
 
                 &:nth-child(2) {
                     margin-left: auto;
+                    display: flex;
+                    justify-content: end;
+
+                    img {
+                        width: 85%;
+
+                        @include media('<phone') {
+                            width: auto;
+                        }
+                    }
                 }
             }
         }
     }
 
     &__section-two {
-        @include section-grid(0 5rem);
-
-        &__ellipse {
-            @include section-ellipse(50%, -50%, -50%, 50%);
-        }
+        @include section-grid(2rem 5rem);
 
         &__top {
             display: grid;
@@ -178,11 +175,7 @@
     }
 
     &__section-three {
-        @include section-grid(0 5rem);
-
-        &__ellipse {
-            @include section-ellipse(50%, -50%, -50%, 50%);
-        }
+        @include section-grid(6rem 5rem);
 
         &__left {
             display: grid;
@@ -211,14 +204,10 @@
     }
 
     &__section-four {
-        @include section-grid(8rem 5rem 15rem, );
+        @include section-grid(5rem 5rem 10rem, );
 
         @include media('<phone') {
             padding: 4rem 1rem 8rem;
-        }
-
-        &__ellipse {
-            @include section-ellipse(10%, -60%, -50%, 50%);
         }
 
         h2 {

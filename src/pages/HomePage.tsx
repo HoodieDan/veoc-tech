@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
         return (
         <div className='home__page'>
             <section className="hero__section">
-                <div className="container d-flex flex-column justify-content-center align-items-center p-5 text-center">
+                <div className="container d-flex flex-column justify-content-center align-items-center py-5 text-center">
                     <h1>
                         We Help Companies Leverage Design to <span className="purple">Win the Customer Acquisition</span> Game 
                     </h1>

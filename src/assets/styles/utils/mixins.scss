@@ -82,7 +82,7 @@
 
   @include media('<phone') {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
 }
 

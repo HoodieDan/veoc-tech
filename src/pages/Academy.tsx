@@ -1,6 +1,6 @@
 import { ArrowForward } from "@mui/icons-material";
 import AIOnBricks from "../assets/images/pngs/ai-on-bricks.png";
-import FemaleSoftwareDev from "../assets/images/pngs/female-software-developer-working-on-laptop.png";
+import developer from "../assets/images/pngs/developer.png";
 import ManWithBooksAvatar from "../assets/images/pngs/man-with-books-avatar.png";
 import ManWorkinfTheServer from "../assets/images/pngs/man-working-the-server.png";
 import TwoWomenOneLaptop from "../assets/images/pngs/two-women-one-laptop.png";
@@ -43,10 +43,8 @@ const COURSES = [
 
 const Academy = () => {
   return (
-    <section className="academy">
-      <div className="academy__hero">
-        <div className="academy__hero__ellipse" />
-        <div className="academy__hero__ellipse" />
+    <div className="academy">
+      <section className="academy__hero">
         <div className="academy__hero__left">
           <h1>
             Empowering young
@@ -70,10 +68,8 @@ const Academy = () => {
             className="img-fluid"
           />
         </div>
-      </div>
-      <div className="academy__section-one">
-        <div className="academy__section-one__ellipse" />
-        <div className="academy__section-one__ellipse" />
+      </section>
+      <section className="academy__section-one">
         <div className="academy__section-one__top">
           <div>
             <h2>
@@ -115,16 +111,14 @@ const Academy = () => {
           </div>
           <div>
             <img
-              src={FemaleSoftwareDev}
-              alt="Female software developer working on laptop"
+              src={developer}
+              alt="developer writing code"
               className="img-fluid"
             />
           </div>
         </div>
-      </div>
-      <div className="academy__section-two">
-        <div className="academy__section-two__ellipse" />
-        <div className="academy__section-two__ellipse" />
+      </section>
+      <section className="academy__section-two">
         <div className="academy__section-two__top">
           <h2>
             We&apos;re building talents for the future with 
@@ -155,10 +149,8 @@ const Academy = () => {
             <img src={AIOnBricks} alt="AI on bricks" className="img-fluid" />
           </div>
         </div>
-      </div>
-      <div className="academy__section-three">
-        <div className="academy__section-three__ellipse" />
-        <div className="academy__section-three__ellipse" />
+      </section>
+      <section className="academy__section-three">
         <div className="academy__section-three__left">
           <h1>
             Enroll to stand a chance to get our
@@ -176,10 +168,8 @@ const Academy = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div className="academy__section-four">
-        <div className="academy__section-four__ellipse" />
-        <div className="academy__section-four__ellipse" />
+      </section>
+      <section className="academy__section-four">
         <h1>
           What students are saying
           <br /> about the academy
@@ -220,7 +210,7 @@ const Academy = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
       {/* <footer className="academy__footer">
         <div className="academy__footer__top">
           <h1>
@@ -255,7 +245,7 @@ const Academy = () => {
           ))}
         </div>
       </footer> */}
-    </section>
+    </div>
   );
 };
 
