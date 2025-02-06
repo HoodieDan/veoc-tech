@@ -13,33 +13,33 @@ const COURSES = [
   "Product Design",
   "Data Analysis",
 ] as const;
-const FOOTER_LINKS = [
-  {
-    category: "Services",
-    links: [
-      { label: "Blog", href: "" },
-      { label: "Case Studies", href: "" },
-      { label: "Academy", href: "/academy" },
-    ],
-  },
-  {
-    category: "Company",
-    links: [
-      { label: "About Us", href: "" },
-      { label: "Events", href: "" },
-      { label: "Community", href: "" },
-      { label: "Careers", href: "" },
-    ],
-  },
-  {
-    category: "Contact Us",
-    links: [
-      { label: "Feel free to get in touch with us", href: null },
-      { label: "Nigeria: +234 123 456 789", href: "" },
-      { label: "partnerships@enyata.com", href: "" },
-    ],
-  },
-] as const;
+// const FOOTER_LINKS = [
+//   {
+//     category: "Services",
+//     links: [
+//       { label: "Blog", href: "" },
+//       { label: "Case Studies", href: "" },
+//       { label: "Academy", href: "/academy" },
+//     ],
+//   },
+//   {
+//     category: "Company",
+//     links: [
+//       { label: "About Us", href: "" },
+//       { label: "Events", href: "" },
+//       { label: "Community", href: "" },
+//       { label: "Careers", href: "" },
+//     ],
+//   },
+//   {
+//     category: "Contact Us",
+//     links: [
+//       { label: "Feel free to get in touch with us", href: null },
+//       { label: "Nigeria: +234 123 456 789", href: "" },
+//       { label: "partnerships@enyata.com", href: "" },
+//     ],
+//   },
+// ] as const;
 
 const Academy = () => {
   return (
@@ -51,9 +51,9 @@ const Academy = () => {
           <h1>
             Empowering young
             <br /> Tech Enthusiast
-            <br /> with the skills to
+            <br /> with the <span className="purple"> skills to
             <br /> create a better
-            <br /> future
+            <br /> future </span>
           </h1>
           <p>
             The Veoc Tech academy is dedicated to sparking the fire
@@ -77,11 +77,9 @@ const Academy = () => {
         <div className="academy__section-one__top">
           <div>
             <h2>
-              Learn from the best and
-              <br /> stand a chance to work
-              <br /> towards becoming an
-              <br /> expert in your chosen
-              <br /> field
+              Learn from the best and stand a chance to 
+              <br /> work towards <span className="purple"> becoming an expert in 
+              <br /> your chosen field </span>
             </h2>
             <p>
               Join a growing community of technologists learning and
@@ -99,10 +97,10 @@ const Academy = () => {
         </div>
         <div className="academy__section-one__bottom">
           <div>
-            <h2>
+            <h4>
               Java Programming and Software
               <br /> Engineering
-            </h2>
+            </h4>
             <p>
               Take your first step towards a career in software
               <br /> development with this introduction to Java- one of the most
@@ -129,9 +127,8 @@ const Academy = () => {
         <div className="academy__section-two__ellipse" />
         <div className="academy__section-two__top">
           <h2>
-            We&apos;re building talents for
-            <br /> the future with those who
-            <br /> have passion to create it
+            We&apos;re building talents for the future with 
+            <br /> those who have passion to create it
           </h2>
           <p>
             Academy intakes are trained and mentored for six weeks by our
@@ -164,11 +161,9 @@ const Academy = () => {
         <div className="academy__section-three__ellipse" />
         <div className="academy__section-three__left">
           <h1>
-            Enroll to stand a<br /> chance to get
-            <br /> our limited time
-            <br /> only learning
-            <br /> experience (0
-            <br /> experience needed)
+            Enroll to stand a chance to get our
+            <br /> limited time only learning experience 
+            <br /> (0 experience needed)
           </h1>
           <a
             href=""
@@ -226,7 +221,7 @@ const Academy = () => {
           </div>
         </div>
       </div>
-      <footer className="academy__footer">
+      {/* <footer className="academy__footer">
         <div className="academy__footer__top">
           <h1>
             What will you
@@ -259,7 +254,7 @@ const Academy = () => {
             </div>
           ))}
         </div>
-      </footer>
+      </footer> */}
     </section>
   );
 };

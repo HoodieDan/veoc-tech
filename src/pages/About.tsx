@@ -12,14 +12,11 @@ const Portfolio: React.FC = () => {
             <section className="hero">
                 <div className="container d-flex flex-column justify-content-center align-items-center p-5 text-lg-center text-md-center">
                     <h1>
-                        A design agency that prioritizes depth 
-                        over scale, creativity over trends and
-                        results over everything.
+                        We are a group of passionate experts that prioritize creativity and results above all else
                     </h1>
 
                     <p className='mt-3'>
-                        We are a design agency built on depth, creativity and impact. From strategy to execution,
-                        every project is crafted with precision, backed by a global network of exceptional talent.
+                        We are a design agency built on depth, creativity and impact. From strategy to execution, every project is crafted with precision, backed by a global network of exceptional talent.
                     </p>
 
                     <button className="book__call mt-5">Book a call</button>
@@ -46,12 +43,12 @@ const Portfolio: React.FC = () => {
             <section className="explore py-5">
                 <div className="container d-flex flex-column justify-content-center align-items-center text-center">
                     <small className="mt-5">A collection of what we've crafted</small>
-                    <h2 className="mt-2">Explore Our Projects</h2>
+                    <h3 className="mt-2">Explore Our Projects</h3>
 
                     <div className="row">
                         <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                             <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                <h3 className='mb-3'>WaterSmith</h3>
+                                <h4 className='mb-3'>WaterSmith</h4>
                                 <p className="mb-2">A website for chartered accounting professionals in Canada to help clients file taxes, financial and audit advisory, and other accounting services.</p>
                                 <p className="mb-2">A website for chartered accounting professionals in Canada to help clients file taxes, financial and audit advisory, and other accounting services.</p>
                                 <div className="d-flex mt-4">
@@ -75,7 +72,7 @@ const Portfolio: React.FC = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                             <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                <h3 className='mb-3'>G.Link</h3>
+                                <h4 className='mb-3'>G.Link</h4>
                                 <p className="mb-2">A product for people to connect with warehouses for container shipping and storage of goods.</p>
                                 <p className="mb-2">A product for people to connect with warehouses for container shipping and storage of goods.</p>
                                 <div className="d-flex mt-4">
@@ -99,7 +96,7 @@ const Portfolio: React.FC = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                             <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                <h3 className='mb-3'>Lease</h3>
+                                <h4 className='mb-3'>Lease</h4>
                                 <p className="mb-2">is a mobile app designed with user experience suggestions designed to solve some UX problems Airbnb users were facing.</p>
                                 <p className="mb-2">is a mobile app designed with user experience suggestions designed to solve some UX problems Airbnb users were facing. </p>
                                 <div className="d-flex mt-4">
@@ -123,7 +120,7 @@ const Portfolio: React.FC = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                             <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                <h3 className='mb-3'>PromptGuardian</h3>
+                                <h4 className='mb-3'>PromptGuardian</h4>
                                 <p className="mb-2">A software as a service product designed to help software engineers easily detect vulnerabilities
                                 in their code.</p>
                                 <p className="mb-2">A software as a service product designed to help software engineers easily detect vulnerabilities
@@ -149,7 +146,7 @@ const Portfolio: React.FC = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                             <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                <h3 className='mb-3'>Mystery Box</h3>
+                                <h4 className='mb-3'>Mystery Box</h4>
                                 <p className="mb-2">A curated luxury warehouse box featuring luxury brands like Amiri, Off-White and others. Users can
                                 shop and make inquiries on brands of their choice.</p>
                                 <p className="mb-2">A curated luxury warehouse box featuring luxury brands like Amiri, Off-White and others. Users can
@@ -175,7 +172,7 @@ const Portfolio: React.FC = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                             <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                <h3 className='mb-3'>TobyTeq</h3>
+                                <h4 className='mb-3'>TobyTeq</h4>
                                 <p className="mb-2">A portfolio website designed for an Upwork top-rated freelance video editor to showcase his skill set and some testimonials from clients.</p>
                                 <p className="mb-2">A portfolio website designed for an Upwork top-rated freelance video editor to showcase his skill set and some testimonials from clients.</p>
                                 <div className="d-flex mt-4">

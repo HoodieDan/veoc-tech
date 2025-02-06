@@ -61,11 +61,7 @@ const HomePage: React.FC = () => {
             <section className="hero__section">
                 <div className="container d-flex flex-column justify-content-center align-items-center p-5 text-center">
                     <h1>
-                        We Help Companies 
-                        <br />
-                        Leverage Design to Win the
-                        <br />
-                        Customer Acquisition Game 
+                        We Help Companies Leverage Design to <span className="purple">Win the Customer Acquisition</span> Game 
                     </h1>
 
                     <p className='mt-3'>

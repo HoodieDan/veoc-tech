@@ -3,6 +3,19 @@
     flex-direction: column;
     overflow-x: hidden;
 
+    h1 {
+        $vw: 100vw;
+        font-size: calc($vw / 1440px * 56px);
+      
+        @include media('<phone') {
+          font-size: calc($vw / 750px * 56px);
+        }
+      
+        @include media('<small') {
+          font-size: calc($vw / 500px * 52px);
+        }
+      }
+
     img {
         object-fit: cover;
     }

@@ -45,7 +45,7 @@
 
             h1 {
                 $vw: 100vw;
-                font-size: calc($vw / 1920px * 150px);
+                font-size: calc($vw / 1440px * 140px);
               
                 @include media('<phone') {
                   font-size: calc($vw / 750px * 135px);

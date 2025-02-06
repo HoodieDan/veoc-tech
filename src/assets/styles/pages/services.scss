@@ -1,4 +1,15 @@
 .services__page {
+    .container {
+        h3 {
+            &.text-center {
+                width: 65vw;
+
+                @include media('<phone') {
+                    width: auto;
+                }
+            }
+        }
+    }
     .hero__section {
         min-height: 100vh;
         display: flex;
@@ -109,6 +120,14 @@
     }
 
     .testimonials {
+        .pill {
+            border: 1px solid $color-white;
+            border-radius: 32px;
+            color: $color-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .testimonial {
             width: 60%;
 

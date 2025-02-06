@@ -24,6 +24,9 @@ function NavBar() {
                     <div className="mid-links d-flex align-items-center">
                         <NavLink to='/' className='nav-link'>Home</NavLink>
                         <NavLink to='/services' className='nav-link'>Services</NavLink>
+                        <NavLink to='/about-us' className='nav-link'>About</NavLink>
+                        <NavLink to='/blog' className='nav-link'>Blog</NavLink>
+                        <NavLink to='/career' className='nav-link'>Career</NavLink>
                         <NavLink to='/academy' className='nav-link'>Academy</NavLink>
                         <NavLink to='/portfolio' className='nav-link'>Portfolio</NavLink>
                     </div>
@@ -42,8 +45,11 @@ function NavBar() {
                         <aside>
                             <NavLink onClick={toggleIsOpen} to='/' className='nav-link'>Home</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/services' className='nav-link'>Services</NavLink>
+                            <NavLink onClick={toggleIsOpen} to='/about-us' className='nav-link'>About</NavLink>
+                            <NavLink onClick={toggleIsOpen} to='/blog' className='nav-link'>Blog</NavLink>
+                            <NavLink onClick={toggleIsOpen} to='/career' className='nav-link'>Career</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/academy' className='nav-link'>Academy</NavLink>
-                            <NavLink onClick={toggleIsOpen} to='/portfolio' className='nav-link'>Portfolio</NavLink>
+                            <NavLink onClick={toggleIsOpen} to='/portfolio' className='nav-link'>Porfolio</NavLink>
                             {/* <div className="d-flex justify-content-center">
                                 <NavLink onClick={toggleIsOpen} to='/contactUs'>
                                     <button className="contact outline">Contact</button>
