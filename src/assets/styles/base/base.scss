@@ -119,7 +119,7 @@ h1 {
   }
 
   @include media('<small') {
-    font-size: calc($vw / 500px * 52px);
+    font-size: calc($vw / 500px * 45px);
   }
 }
 
@@ -134,7 +134,7 @@ h2 {
   }
 
   @include media('<small') {
-    font-size: calc($vw / 500px * 48px);
+    font-size: calc($vw / 500px * 38px);
   }
 }
 
