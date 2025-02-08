@@ -1,0 +1,92 @@
+.blog__page {
+    $vw: 100vw;
+
+    .pill {
+        border: 1px solid $color-grey-border;
+        border-radius: 32px;
+        color: $color-grey-border;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+
+        &.purple__pill {
+            border-color: $color-purple;
+        }
+    }
+
+    .search {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media('<phone') {
+            padding-top: 150px;
+            padding-bottom: 40px;
+            height: auto;
+            min-height: 40vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                width: 100%;
+            }
+
+            .search__bar {
+                width: 70%;
+                position: relative;
+
+                @include media('<phone') {
+                    width: 100%;
+                }
+
+                input {
+                    padding: calc($vw / 1440px * 24px) calc($vw / 1440px * 130px) calc($vw / 1440px * 24px) calc($vw / 1440px * 24px);
+                    margin: 0;
+                    border-radius: calc($vw / 1440px * 32px);
+
+                    @include media('<phone') {
+                        padding: calc($vw / 575px * 24px) calc($vw / 575px * 130px) calc($vw / 575px * 24px) calc($vw / 575px * 24px);
+                        border-radius: calc($vw / 575px * 32px);
+                    }
+                }
+
+                button {
+                    outline: none;
+                    width: calc($vw / 1440px * 100px);
+                    border-radius: calc($vw / 1440px * 32px);
+                    position: absolute;
+                    right: calc($vw / 1440px * 15px);
+
+                    @include media('<mid') {
+                        padding: 12px 24px;
+                    }
+
+                    @include media('<phone') {
+                        width: calc($vw / 575px * 150px);
+                        border-radius: calc($vw / 575px * 32px);
+                        right: calc($vw / 575px * 15px);
+                    }
+                }
+            }
+        }
+    }
+    .blog__previews {
+        .header {
+            border-bottom: 1px solid $color-purple;
+
+            .pill {
+                margin-right: 16px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

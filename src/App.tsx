@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import Career from "./pages/Career";
 import CareerDescription from "./pages/CareerDescription";
 import Blog from "./pages/Blog";
+import BlogWriteUp from "./pages/BlogWriteup";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/careers" element={<Career />} />
           <Route path="/careers/:id" element={<CareerDescription />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogWriteUp />} />
         </Routes>
       </div>
 
