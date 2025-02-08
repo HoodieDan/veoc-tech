@@ -9,6 +9,9 @@ import ContactUs from "./pages/Contact";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Career from "./pages/Career";
+import CareerDescription from "./pages/CareerDescription";
+import Blog from "./pages/Blog";
 
 function App() {
 
@@ -23,6 +26,9 @@ function App() {
           <Route path="/academy" element={<Academy />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/careers" element={<Career />} />
+          <Route path="/careers/:id" element={<CareerDescription />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
 

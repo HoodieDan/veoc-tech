@@ -1,0 +1,39 @@
+.career__page {
+    .pill {
+        border: 1px solid $color-white;
+        border-radius: 32px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+
+        &.grey__pill {
+            border-color: $color-grey-border;
+            color: $color-grey-border;
+        }
+    }
+    .careers {
+        padding-top: 150px;
+
+        .job {
+            border-bottom: 1px solid $color-grey-border;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            .right {
+                border-bottom: 1px solid $color-grey-border;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                &:first-of-type {
+                    padding-top: 0 !important;
+                }
+            }
+        }
+    }
+}

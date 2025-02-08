@@ -4,6 +4,7 @@ $color-page-bg: #0B0214;
 $color-button-border: #6502B4;
 $color-purple-text: #B46FEC;
 $color-grey: #C3C3C3;
+$color-grey-border: #ACACAC;
 $color-nav-border: #F3F3F3;
 $color-purple: #6502B4;
 $font-inter: "Inter Tight";
@@ -12,4 +13,4 @@ $font-cabinet: "Cabinet Grotesk Variable";
 $ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 $ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 
-$z-indexes: ('nav', 'logo', 'hamburger', 'aside', 'content', 'bg');
+$z-indexes: ('modal', 'logo', 'hamburger', 'aside', 'content', 'bg');

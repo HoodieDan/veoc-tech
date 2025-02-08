@@ -157,7 +157,7 @@ h4 {
   font-weight: 700;
   $vw: 100vw;
   font-family: $font-cabinet;
-  font-size: calc($vw / 1920px * 32px);
+  font-size: calc($vw / 1440px * 32px);
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 32px);
@@ -172,7 +172,7 @@ h5 {
   font-weight: 600;
   $vw: 100vw;
   font-family: $font-cabinet;
-  font-size: calc($vw / 1920px * 24px);
+  font-size: calc($vw / 1440px * 24px);
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 24px);
@@ -235,15 +235,15 @@ img {
 input, textarea {
   border: 1px solid $color-grey;
   width: 100%;
-  border-radius: 5px;
-  padding: 14px;
+  border-radius: 8px;
+  padding: 12px;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   color: $color-white;
   font-family: $font-inter;
   $vw: 100vw;
   font-size: calc($vw / 1920px * 18px);
-  background: $color-white;
+  background: transparent;
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 16px);
@@ -314,6 +314,10 @@ button {
   @include media('<phone') {
     display: block !important;
   }
+}
+
+.grey {
+  color: $color-grey-border;
 }
 
 .underlined__header {

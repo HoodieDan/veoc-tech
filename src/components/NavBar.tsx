@@ -26,7 +26,7 @@ function NavBar() {
                         <NavLink to='/services' className='nav-link'>Services</NavLink>
                         <NavLink to='/about-us' className='nav-link'>About</NavLink>
                         <NavLink to='/blog' className='nav-link'>Blog</NavLink>
-                        <NavLink to='/career' className='nav-link'>Career</NavLink>
+                        <NavLink to='/careers' className='nav-link'>Careers</NavLink>
                         <NavLink to='/academy' className='nav-link'>Academy</NavLink>
                         <NavLink to='/portfolio' className='nav-link'>Portfolio</NavLink>
                     </div>
@@ -47,7 +47,7 @@ function NavBar() {
                             <NavLink onClick={toggleIsOpen} to='/services' className='nav-link'>Services</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/about-us' className='nav-link'>About</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/blog' className='nav-link'>Blog</NavLink>
-                            <NavLink onClick={toggleIsOpen} to='/career' className='nav-link'>Career</NavLink>
+                            <NavLink onClick={toggleIsOpen} to='/careers' className='nav-link'>Careers</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/academy' className='nav-link'>Academy</NavLink>
                             <NavLink onClick={toggleIsOpen} to='/portfolio' className='nav-link'>Porfolio</NavLink>
                             {/* <div className="d-flex justify-content-center">
