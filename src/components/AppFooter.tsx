@@ -7,10 +7,10 @@ function AppFooter() {
             <div className="footer__top desktop">
                 <div className="container">
                     <div className="row py-5">
-                        <div className="col-lg-5">
+                        <div className="col-lg-6">
                             <h2>Let's Build something together</h2>
                         </div>
-                        <div className="col-lg-4 col-0 desktop"></div>
+                        <div className="col-lg-3 col-0 desktop"></div>
                         <div className="col-lg-3 d-flex align-items-center justify-content-end mt-lg-0 mt-3">
                             <button className="book w-100">
                                 Book your spot now
@@ -38,14 +38,14 @@ function AppFooter() {
                     <div className="col-lg-2">
                         <h6 className='mb-3'>Quick Links</h6>
                         <NavLink to='/' className='link'>Home</NavLink>
-                        <NavLink to='/services'  className='link'>About</NavLink>
+                        <NavLink to='/about-us'  className='link'>About</NavLink>
                         <NavLink to='/portfolio'  className='link'>Projects</NavLink>
                     </div>
                     <div className="col-lg-2">
                         <h6 className='mb-3'>Company</h6>
                         <NavLink to='/services'  className='link'>About</NavLink>
                         <NavLink to='/contact'  className='link'>Contact</NavLink>
-                        <NavLink to='/'  className='link'>Careers</NavLink>
+                        <NavLink to='/careers'  className='link'>Careers</NavLink>
                         <NavLink to='/'  className='link'>Press</NavLink>
                     </div>
                     <div className="col-lg-4">
