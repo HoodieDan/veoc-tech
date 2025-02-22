@@ -1,43 +1,43 @@
-@import './base/reset.scss';
+@import 'base/reset';
 
 // ------------------------------------ // ------------------------------------------
 // -------------------------------- U T I L S ---------------------------------------
 // ------------------------------------ // ------------------------------------------
 
-@import './utils/variables.scss';
-@import './utils/functions.scss';
-@import './utils/mixins.scss';
-@import './utils/vendors.scss';
-@import './utils/responsive.scss';
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/vendors';
+@import 'utils/responsive';
 
 // ------------------------------------ // ------------------------------------------
 // --------------------------------- B A S E ----------------------------------------
 // ------------------------------------ // ------------------------------------------
 
-@import './base/fonts.scss';
-@import './base/base.scss';
+@import 'base/fonts';
+@import 'base/base';
 
 // ------------------------------------ // ------------------------------------------
 // --------------------------- C O M P O N E N T S ----------------------------------
 // ------------------------------------ // ------------------------------------------
 
-@import './components/app-footer.scss';
-@import './components/navbar.scss';
-@import './components/blog-preview.scss';
-@import './components/application-modal.scss';
+@import 'components/app-footer';
+@import 'components/navbar';
+@import 'components/blog-preview';
+@import 'components/application-modal';
 
 // ------------------------------------ // ------------------------------------------
 // -------------------------- P A G E S  D I R E C T O R Y --------------------------
 // ------------------------------------ // ------------------------------------------
 
-@import './pages/homepage.scss';
-@import './pages/academy.scss';
-@import './pages/contact.scss';
-@import './pages/services.scss';
-@import './pages/about.scss';
-@import './pages/career.scss';
-@import './pages/blog.scss';
-@import './pages/blog-writeup.scss';
-@import './pages/career-description.scss';
+@import 'pages/homepage';
+@import 'pages/academy';
+@import 'pages/contact';
+@import 'pages/services';
+@import 'pages/about';
+@import 'pages/career';
+@import 'pages/blog';
+@import 'pages/blog-writeup';
+@import 'pages/career-description';
 
 // ------------------------------------ // ------------------------------------
