@@ -25,7 +25,7 @@ const About: React.FC = () => {
                         We are a design agency built on depth, creativity and impact. From strategy to execution, every project is crafted with precision, backed by a global network of exceptional talent. We are a group of passionate experts that prioritize creativity and results above all else.
                     </p>
 
-                    <img src={aboutHeroImg} alt="hero image" className='mt-4 img-fluid desktop' />
+                    <img src={aboutHeroImg} alt="hero image" className='mt-4 img-fluid' />
 
                     <button className="book__call mt-5">Book a call</button>
                 </div>

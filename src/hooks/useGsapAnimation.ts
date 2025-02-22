@@ -27,7 +27,6 @@ export const useGsapAnimations = () => {
             scrollTrigger: {
               trigger: el,
               start: "bottom bottom",
-              toggleActions: "play reverse play reverse",
             },
           }
         );
@@ -42,7 +41,6 @@ export const useGsapAnimations = () => {
             scrollTrigger: {
               trigger: el,
               start: "bottom bottom",
-              toggleActions: "play reverse play reverse",
             },
           }
         );
@@ -59,7 +57,6 @@ export const useGsapAnimations = () => {
             scrollTrigger: {
               trigger: el,
               start: "bottom bottom",
-              toggleActions: "play reverse play reverse",
             },
           }
         );
@@ -75,7 +72,6 @@ export const useGsapAnimations = () => {
             scrollTrigger: {
               trigger: el,
               start: "bottom bottom",
-              toggleActions: "play reverse play reverse",
             },
           }
         );
@@ -93,7 +89,6 @@ export const useGsapAnimations = () => {
             scrollTrigger: {
               trigger: el,
               start: "bottom bottom",
-              toggleActions: "play reverse play reverse",
             },
           }
         );
@@ -111,7 +106,6 @@ export const useGsapAnimations = () => {
             scrollTrigger: {
               trigger: el,
               start: "center bottom",
-              toggleActions: "play reverse play reverse",
             },
           }
         );
