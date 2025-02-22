@@ -49,7 +49,7 @@ const About: React.FC = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4">
-                                <img src={storyImg} alt="story image" className='img-fluid' />
+                                <img src={storyImg} alt="story image" className='img-fluid inset__reveal__image' />
                             </div>
                         </div>
                     </div>
