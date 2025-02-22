@@ -17,7 +17,7 @@ import BlogWriteUp from "./pages/BlogWriteup";
 function App() {
 
   return (
-    <>
+    <div>
       <NavBar />
 
       <div className="routes">
@@ -35,7 +35,7 @@ function App() {
       </div>
 
       <AppFooter />
-    </>
+    </div>
   );
 }
 
