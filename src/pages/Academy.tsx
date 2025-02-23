@@ -6,6 +6,7 @@ import ManWorkinfTheServer from "../assets/images/pngs/man-working-the-server.pn
 import TwoWomenOneLaptop from "../assets/images/pngs/two-women-one-laptop.png";
 import WomanAvatar from "../assets/images/pngs/woman-avatar.png";
 import WomanLeanOnWall from "../assets/images/pngs/woman-lean-on-wall.png";
+import { useGsapAnimations } from "../hooks/useGsapAnimation";
 
 const COURSES = [
   "Software Engineering",
@@ -42,18 +43,21 @@ const COURSES = [
 // ] as const;
 
 const Academy = () => {
+
+  useGsapAnimations();
+
   return (
     <div className="academy">
       <section className="academy__hero">
         <div className="academy__hero__left">
-          <h1>
+          <h1 className="reveal__text">
             Empowering young
             <br /> Tech Enthusiast
             <br /> with the <span className="purple"> skills to
             <br /> create a better
             <br /> future </span>
           </h1>
-          <p>
+          <p className="fade__text">
             The Veoc Tech academy is dedicated to sparking the fire
             <br /> of learning in the next generation
           </p>
@@ -65,19 +69,19 @@ const Academy = () => {
           <img
             src={TwoWomenOneLaptop}
             alt="Two women one laptop"
-            className="img-fluid"
+            className="img-fluid inset__reveal__image"
           />
         </div>
       </section>
       <section className="academy__section-one">
         <div className="academy__section-one__top">
           <div>
-            <h2>
+            <h2 className="reveal__text">
               Learn from the best and stand a chance to 
               <br /> work towards <span className="purple"> becoming an expert in 
               <br /> your chosen field </span>
             </h2>
-            <p>
+            <p className="fade__text">
               Join a growing community of technologists learning and
               <br /> building skillsets that will power the innovations of
               <br /> the future.
@@ -93,17 +97,17 @@ const Academy = () => {
         </div>
         <div className="academy__section-one__bottom">
           <div>
-            <h4>
+            <h4 className="reveal__text">
               Java Programming and Software
               <br /> Engineering
             </h4>
-            <p>
+            <p className="fade__text">
               Take your first step towards a career in software
               <br /> development with this introduction to Java- one of the most
               <br /> in-demand programming languages and the foundation of
               <br /> the Android operating system.
             </p>
-            <p>
+            <p className="fade__text">
               Designed for beginners, this specialization will teach you core
               <br /> programming concepts and equip you to write programs to
               <br /> solve complex problems.
@@ -113,18 +117,18 @@ const Academy = () => {
             <img
               src={developer}
               alt="developer writing code"
-              className="img-fluid"
+              className="img-fluid inset__reveal__image"
             />
           </div>
         </div>
       </section>
       <section className="academy__section-two">
         <div className="academy__section-two__top">
-          <h2>
+          <h2 className="reveal__text">
             We&apos;re building talents for the future with 
             <br /> those who have passion to create it
           </h2>
-          <p>
+          <p className="fade__text">
             Academy intakes are trained and mentored for six weeks by our
             <br /> experienced team members after which they are given the
             <br /> opportunity to gain experience on real projects
@@ -135,24 +139,24 @@ const Academy = () => {
             <img
               src={WomanLeanOnWall}
               alt="Woman leaning on a wall"
-              className="img-fluid"
+              className="img-fluid inset__reveal__image"
             />
           </div>
           <div>
             <img
               src={ManWorkinfTheServer}
               alt="Man working the server"
-              className="img-fluid"
+              className="img-fluid inset__reveal__image"
             />
           </div>
           <div>
-            <img src={AIOnBricks} alt="AI on bricks" className="img-fluid" />
+            <img src={AIOnBricks} alt="AI on bricks" className="img-fluid inset__reveal__image" />
           </div>
         </div>
       </section>
       <section className="academy__section-three">
         <div className="academy__section-three__left">
-          <h1>
+          <h1 className="reveal__text">
             Enroll to stand a chance to get our
             <br /> limited time only learning experience 
             <br /> (0 experience needed)
@@ -170,20 +174,20 @@ const Academy = () => {
         </div>
       </section>
       <section className="academy__section-four">
-        <h1>
+        <h1 className="reveal__text">
           What students are saying
           <br /> about the academy
         </h1>
         <div className="academy__section-four__testimonials">
           <div className="academy__section-four__testimonials__testimonial">
             <div className="academy__section-four__testimonials__testimonial__header">
-              <img src={WomanAvatar} alt="Woman avatar" className="img-fluid" />
+              <img src={WomanAvatar} alt="Woman avatar" className="img-fluid inset__reveal__image" />
               <div>
-                <span className="fw-semibold">Cynthia Ilomeje</span>
-                <span>Frontend Engineer</span>
+                <span className="fw-semibold fade__up__text">Cynthia Ilomeje</span>
+                <span className="fade__text">Frontend Engineer</span>
               </div>
             </div>
-            <p className="fw-medium">
+            <p className="fw-medium fade__text">
               “I was a microbiology graduate with no prior knowledge of anything
               software development when I started, I now and have been working
               as a Software Engineer where I develop scalable web applications
@@ -195,14 +199,14 @@ const Academy = () => {
               <img
                 src={ManWithBooksAvatar}
                 alt="Man with books avatar"
-                className="img-fluid"
+                className="img-fluid inset__reveal__image"
               />
               <div>
-                <span className="fw-semibold">Michael Adisa</span>
-                <span>Frontend Engineer</span>
+                <span className="fw-semibold fade__up__text">Michael Adisa</span>
+                <span className="fade__text">Frontend Engineer</span>
               </div>
             </div>
-            <p className="fw-medium">
+            <p className="fw-medium fade__text">
               “Enyata academy promised to give a roadmap to build a successful
               career and teach necessary skills to get started on that path, in
               four months and they did. I am now a Software Engineer specialised
@@ -213,11 +217,11 @@ const Academy = () => {
       </section>
       {/* <footer className="academy__footer">
         <div className="academy__footer__top">
-          <h1>
+          <h1 className="reveal__text">
             What will you
             <br /> Build today?
           </h1>
-          <p>
+          <p className="fade__text">
             Leverage our world class engineering teams to get your
             <br /> ideas and projects up and running quickly.
           </p>
@@ -231,7 +235,7 @@ const Academy = () => {
               className="academy__footer__categories__category"
               key={category}
             >
-              <span className="fw-semibold">{category}</span>
+              <span className="fw-semibold fade__up__text">{category}</span>
               {links.map(({ label, href }, index) =>
                 href !== null ? (
                   <a href={href} title={label} key={index}>

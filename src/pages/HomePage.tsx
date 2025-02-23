@@ -15,8 +15,12 @@ import partner3 from '../assets/images/partner-3.png';
 import partner4 from '../assets/images/partner-4.png';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import { useGsapAnimations } from '../hooks/useGsapAnimation';
 
 const HomePage: React.FC = () => {
+
+        useGsapAnimations();
+
         const [faqIsOpen, setFaqIsOpen] = useState<number | null>(null);
         const faqs = [
             {
@@ -60,11 +64,11 @@ const HomePage: React.FC = () => {
         <div className='home__page'>
             <section className="hero__section">
                 <div className="container d-flex flex-column justify-content-center align-items-center py-5 text-center">
-                    <h1>
+                    <h1 className='hero__header'>
                         We Help Companies Leverage Design to <span className="purple">Win the Customer Acquisition</span> Game 
                     </h1>
 
-                    <p className='mt-3'>
+                    <p className='mt-3 hero__text'>
                         Through a powerful blend of creativity and precision, we ensure that every interaction resonates with your audience and strengthens your online presence.
                     </p>
 
@@ -76,7 +80,7 @@ const HomePage: React.FC = () => {
 
             <section className="our__works py-5">
                 <div className="container pt-5 pb-4">
-                    <h2>Our Works</h2>
+                    <h2 className='reveal__text'>Our Works</h2>
                 </div>
                 <div className="project__images__div">
                     <div className="project__images d-flex align-items-center">
@@ -89,20 +93,20 @@ const HomePage: React.FC = () => {
                     </div>
                 </div>
                 <div className="container py-5">
-                    <h2>Building Websites & Products that combine <span className="purple">aesthetics</span>, <span className="purple">functionality</span> to deliver great <span className="purple">results</span></h2>
+                    <h2 className='reveal__text'>Building Websites & Products that combine <span className="purple">aesthetics</span>, <span className="purple">functionality</span> to deliver great <span className="purple">results</span></h2>
 
                     <div className="stats d-flex flex-wrap">
                         <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 me-5 mt-5">
                             <h1 className='mb-4'>40+</h1>
-                            <p>Finalized Projects</p>
+                            <p className='fade__up__text'>Finalized Projects</p>
                         </div>
                         <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 me-5 mt-5">
                             <h1 className='mb-4'>96%</h1>
-                            <p>Conversion Rate Improvement</p>
+                            <p className='fade__up__text'>Conversion Rate Improvement</p>
                         </div>
                         <div className="stat d-flex flex-column align-items-center me-lg-5 me-md-5 me-5 mt-5">
                             <h1 className='mb-4'>6+</h1>
-                            <p>Years of Experience</p>
+                            <p className='fade__up__text'>Years of Experience</p>
                         </div>
                     </div>
                 </div>
@@ -110,14 +114,14 @@ const HomePage: React.FC = () => {
 
             <section className="why__work">
                 <div className="container py-5">
-                    <h2>Why work with us</h2>
+                    <h2 className='reveal__text'>Why work with us</h2>
 
                     <div className="row justify-content-center cards">
                         <div className="col-lg-4 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card px-3 py-5 d-flex flex-column align-items-center text-center h-100">
                                 <img src={check} alt="check" className='mb-3' />
-                                <h4 className="mb-3">Expertise</h4>
-                                <p>
+                                <h4 className="mb-3 reveal__text">Expertise</h4>
+                                <p className='fade__up__text'>
                                     With us, you can experience veterans with over half a decade of design and development experience  capable of delivering the most complex and visually stunning projects across multiple industries.
                                 </p>
                             </div>
@@ -125,8 +129,8 @@ const HomePage: React.FC = () => {
                         <div className="col-lg-4 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card px-3 py-5 d-flex flex-column align-items-center text-center h-100">
                                 <img src={star} alt="star" className='mb-3' />
-                                <h4 className="mb-3">Communication</h4>
-                                <p>
+                                <h4 className="mb-3 reveal__text">Communication</h4>
+                                <p className='fade__up__text'>
                                     We have a commitment to swift and regular communication, keeping our stakeholders in the loop  with progress and following up on the responses and feedbacks to ensure your maximum satisfaction.
                                 </p>
                             </div>
@@ -134,8 +138,8 @@ const HomePage: React.FC = () => {
                         <div className="col-lg-4 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card px-3 py-5 d-flex flex-column align-items-center text-center h-100">
                                 <img src={stopwatch} alt="stopwatch" className='mb-3' />
-                                <h4 className="mb-3">Accelerated Speed</h4>
-                                <p>
+                                <h4 className="mb-3 reveal__text">Accelerated Speed</h4>
+                                <p className='fade__up__text'>
                                     From the discovery call to a quick action plan within 24 hours, we get to work right away, ensuring your project is delivered on time and with precision. We also ensure our workflow aligns with your schedule.
                                 </p>
                             </div>
@@ -144,28 +148,28 @@ const HomePage: React.FC = () => {
 
                     <div className="row features py-3">
                         <div className="col-lg-4 col-md-6 mt-lg-3 mt-5 d-flex flex-column justify-content-between">
-                            <h4>User Interface</h4>
-                            <h4 className="mt-2">User Experience</h4>
-                            <h4 className="mt-2">Responsive Design</h4>
-                            <h4 className="mt-2">Custom Code</h4>
-                            <h4 className="mt-2">Component Libraries</h4>
-                            <h4 className="mt-2">Desktop & Mobile Apps</h4>
-                            <h4 className="mt-2">Website Migration</h4>
-                            <h4 className="mt-2">Figma to Framer</h4>
+                            <h4 className='fade__up__text'>User Interface</h4>
+                            <h4 className="mt-2 fade__up__text">User Experience</h4>
+                            <h4 className="mt-2 fade__up__text">Responsive Design</h4>
+                            <h4 className="mt-2 fade__up__text">Custom Code</h4>
+                            <h4 className="mt-2 fade__up__text">Component Libraries</h4>
+                            <h4 className="mt-2 fade__up__text">Desktop & Mobile Apps</h4>
+                            <h4 className="mt-2 fade__up__text">Website Migration</h4>
+                            <h4 className="mt-2 fade__up__text">Figma to Framer</h4>
                         </div>
                         <div className="col-lg-4 col-0 desktop"></div>
                         <div className="col-lg-4 col-md-6 mt-lg-3 mt-5 ps-lg-4">
                             <div className="fields p-lg-3 p-5">
-                                <h3 className='mb-2'>Fields</h3>
+                                <h3 className='mb-2 reveal__text'>Fields</h3>
 
-                                <p className="mt-2">AI</p>
-                                <p className="mt-2">Saas</p>
-                                <p className="mt-2">Fintech</p>
-                                <p className="mt-2">E-commerce</p>
-                                <p className="mt-2">Esports</p>
-                                <p className="mt-2">Automotive</p>
-                                <p className="mt-2">Fashion</p>
-                                <p className="mt-2">Real Estate</p>
+                                <p className="mt-2 fade__up__text">AI</p>
+                                <p className="mt-2 fade__up__text">Saas</p>
+                                <p className="mt-2 fade__up__text">Fintech</p>
+                                <p className="mt-2 fade__up__text">E-commerce</p>
+                                <p className="mt-2 fade__up__text">Esports</p>
+                                <p className="mt-2 fade__up__text">Automotive</p>
+                                <p className="mt-2 fade__up__text">Fashion</p>
+                                <p className="mt-2 fade__up__text">Real Estate</p>
                             </div>
                         </div>
                     </div>
@@ -175,35 +179,35 @@ const HomePage: React.FC = () => {
 
             <section className="partners">
                 <div className="container py-5">
-                    <h2>Our Partners</h2>
+                    <h2 className='reveal__text'>Our Partners</h2>
 
                     <div className="row justify-content-center cards">
                         <div className="col-lg-3 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card p-4 d-flex flex-column align-items-center text-center h-100">
                                 <img src={partner1} alt="partner image" className='mb-4' />
-                                <h4 className="mb-2">John Jones</h4>
-                                <p>CEO, Mirage</p>
+                                <h4 className="mb-2 fade__text">John Jones</h4>
+                                <p className='fade__up__text'>CEO, Mirage</p>
                             </div>
                         </div>
                         <div className="col-lg-3 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card p-4 d-flex flex-column align-items-center text-center h-100">
                                 <img src={partner2} alt="partner image" className='mb-4' />
-                                <h4 className="mb-2">Kane Schliff</h4>
-                                <p>CTO, Novelle</p>
+                                <h4 className="mb-2 fade__text">Kane Schliff</h4>
+                                <p className='fade__up__text'>CTO, Novelle</p>
                             </div>
                         </div>
                         <div className="col-lg-3 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card p-4 d-flex flex-column align-items-center text-center h-100">
                                 <img src={partner3} alt="partner image" className='mb-4' />
-                                <h4 className="mb-2">Timi Jay</h4>
-                                <p>Co-Founder, Nil</p>
+                                <h4 className="mb-2 fade__text">Timi Jay</h4>
+                                <p className='fade__up__text'>Co-Founder, Nil</p>
                             </div>
                         </div>
                         <div className="col-lg-3 mt-3 col-md-6 col-sm-12 px-3 py-lg-5">
                             <div className="card p-4 d-flex flex-column align-items-center text-center h-100">
                                 <img src={partner4} alt="partner image" className='mb-4' />
-                                <h4 className="mb-2">Nicolas Midi</h4>
-                                <p>Co-Founder, Velocity One</p>
+                                <h4 className="mb-2 fade__text">Nicolas Midi</h4>
+                                <p className='fade__up__text'>Co-Founder, Velocity One</p>
                             </div>
                         </div>
                     </div>
@@ -216,8 +220,8 @@ const HomePage: React.FC = () => {
 
             <section className="faqs">
                 <div className="container py-5">
-                    <h2>FAQs</h2>
-                    <p className='mb-3'>Some frequently asked questions and answers</p>
+                    <h2 className='reveal__text'>FAQs</h2>
+                    <p className='mb-3 fade__up__text'>Some frequently asked questions and answers</p>
 
                     <div className="questions d-flex justify-content-center align-items-center flex-column">
                         {faqs.map((faq, index) => (
@@ -241,7 +245,7 @@ const HomePage: React.FC = () => {
                                 {faqIsOpen === index && (
                                     <div className="row">
                                     <div className="col-11">
-                                        <p>{faq.answer}</p>
+                                        <p className='fade__up__text'>{faq.answer}</p>
                                     </div>
                                     </div>
                                 )}

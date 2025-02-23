@@ -13,6 +13,7 @@ import { useGsapAnimations } from '../hooks/useGsapAnimation';
 const About: React.FC = () => {
 
     useGsapAnimations();
+    
     return (
         <div className='about__page'>
             <section className="hero">

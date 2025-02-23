@@ -298,6 +298,13 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  .word {
+    background-image: linear-gradient(to right, #8700FF 6%, #DAB0FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .desktop {
@@ -338,6 +345,23 @@ button {
 
 .char {
   display: inline-block;
+}
+
+.hero__header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  .word {
+    transform: translateY(200%);
+  }
+}
+
+.hero__text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+  .word {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 }
 
 @keyframes scroll {
