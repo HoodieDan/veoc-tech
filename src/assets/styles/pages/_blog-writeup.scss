@@ -1,0 +1,18 @@
+.blog__writeup {
+    .pill {
+        border: 1px solid $color-white;
+        border-radius: 32px;
+    }
+
+    .text-gray {
+        color: $color-grey;
+    }
+
+    .hero {       
+        padding-top: 150px;
+
+        @include media('<phone') {
+            padding-top: 100px;
+        }
+    }
+}
