@@ -1,21 +1,24 @@
 import { useMemo } from "react";
 import { useParams } from "react-router-dom";
+import { useGsapAnimations } from "../hooks/useGsapAnimation";
 import { portfolio } from "../lib/data";
 
 const Project = () => {
     const { id: projectId } = useParams();
     const project = useMemo(() => portfolio.find(({ id }) => id === projectId), [projectId])!;
 
+    useGsapAnimations();
+
     return (
         <section className="project">
             <div className="project__header row gap-4 justify-content-between align-items-center">
                 <div className="col-sm-6 d-flex flex-column gap-3">
-                    <h1>{project.name}</h1>
-                    <p>{project.description}</p>
+                    <h1 className="reveal__text">{project.name}</h1>
+                    <p className="fade__text">{project.description}</p>
                 </div>
                 <div className="col-sm-2 d-flex flex-column gap-3">
                     {project.tags.map((tag, index) => (
-                        <span key={index} className="project__tag">
+                        <span key={index} className="project__tag reveal__text">
                             {tag}
                         </span>
                     ))}
