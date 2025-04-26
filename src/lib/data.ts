@@ -90,9 +90,8 @@ export const portfolio = [
         id: "1",
         name: "Aurora AI",
         slug: "aurora-ai",
-        description: [
+        description:
             "An AI powered Market Research tool built for the purpose of allowing users create prompts and flows that generate User research and Market Research Data. Our challenge was crafting the User Interface and Experience of the platform while taking into context the most efficient ways to undertake tasks for users",
-        ],
         tags: ["UI design", "Product strategy", "User research", "Usability test", "UX Design", "Prototyping"],
         display: "",
         showcase: [Aurora1, Aurora2, Aurora3, Aurora4, Aurora5, Aurora6, Aurora7, Aurora8, Aurora9, Aurora10, Aurora11],
@@ -101,9 +100,8 @@ export const portfolio = [
         id: "2",
         name: "Prompt Plumber AI",
         slug: "prompt-plumber-ai",
-        description: [
+        description:
             "A prompt engineering platform that allows for Beginners and Intermediate level prompt Engineers and AI enthusiast to create very effective prompts that get them their expected outcomes using Popular Large Language Model. Our role in this project was to create the Sign up, Onboarding, Tutorial and Entire user flow as well as pre flow including all the Website pages that Aid conversions.",
-        ],
         tags: ["UI design", "Product strategy", "User research", "Usability test", "UI/UX Testing", "Prototyping"],
         display: "",
         showcase: [
@@ -124,10 +122,8 @@ export const portfolio = [
         id: "3",
         name: "Nexant construction",
         slug: "nexant-construction",
-        description: [
-            "We Redesigned and Developed a website for the First and currently only ISO certified Rail and Road Construction company in NIgeria,",
-            "Not only did we craft them a much more Aesthetic website but after improving their performance and  conversion rate they signed an 8 figure contract with the government less than 2 months later.",
-        ],
+        description:
+            "We Redesigned and Developed a website for the First and currently only ISO certified Rail and Road Construction company in NIgeria, Not only did we craft them a much more Aesthetic website but after improving their performance and  conversion rate they signed an 8 figure contract with the government less than 2 months later.",
         tags: [
             "UI design",
             "Content strategy",
@@ -143,9 +139,8 @@ export const portfolio = [
         id: "4",
         name: "Prompt guardian",
         slug: "prompt-guardian",
-        description: [
+        description:
             "An AI powered solution for Developers to be able to create better Software by running their code through the AI tool to get Technical Feedback and Decrease the time and effort spent in manually looking for Bugs. Our Task was to create a Mid-Fidelity product that could communicate the Idea of how the product would work before the High Fidelity Design commenced",
-        ],
         tags: ["UI design", "Mid-fidelity", "User research", "Usability test", "Prototyping"],
         display: "",
         showcase: [
@@ -163,9 +158,8 @@ export const portfolio = [
         id: "5",
         name: "Alomaa",
         slug: "alomaa",
-        description: [
+        description:
             "We collaborated with another Agency to bring the site to life after the Design had been worked on and iterated using Wordpress and Elementor pro as our tools of choice for this project",
-        ],
         tags: ["Website Design", "Word press", "Elementor pro", "HTML & CSS", "Web development"],
         display: "",
         showcase: [Alomaa1, Alomaa2, Alomaa3, Alomaa4, Alomaa5, Alomaa6, Alomaa7, Alomaa8, Alomaa9],
@@ -174,9 +168,8 @@ export const portfolio = [
         id: "6",
         name: "Fleetwaters Farms",
         slug: "fleetwaters-farms",
-        description: [
+        description:
             "A website for a Multifaceted Agricultural company, helping them not only communicate their Products and Expertise but to Fashion a visually appealing User Interface and Experience that brought life to their Commitment to Sustainable Agriculture. Design and Development were all done Internally with the site being Fully Hard coded ",
-        ],
         tags: [
             "UI design",
             "Brand Strategy",
@@ -203,9 +196,8 @@ export const portfolio = [
         id: "7",
         name: "Tobyteq website",
         slug: "tobyteq-website",
-        description: [
+        description:
             "A website for a Post-production Video Editing Agency that is Designed to communicate the Push towards innovation, While ensuring Adherence to the Company's Brand Identity and Strategic lean towards Boldness and Flare. Design and Development were done Internally with WordPress as the Tool of Choice",
-        ],
         tags: ["UI design", "Brand strategy", "WordPress", "HTML & CSS", "Usability & QA test", "Web development"],
         display: "",
         showcase: [Tobyteq1, Tobyteq2, Tobyteq3, Tobyteq4, Tobyteq5, Tobyteq6, Tobyteq7],
@@ -214,9 +206,8 @@ export const portfolio = [
         id: "8",
         name: "Chedar website",
         slug: "chedar-website",
-        description: [
+        description:
             "A French SaaS Website where we collaborated with the in-house team and our role was to focus on maintaining a heavy use of the company's brand colours while creating complementary visual assets that communicate the Products features. We worked only on it’s design and Website Assets only for this project",
-        ],
         tags: ["UI design", "Visual Assets", "Illustrator", "Photoshop", "Visual design"],
         display: "",
         showcase: [Chedar1, Chedar2, Chedar3, Chedar4, Chedar5, Chedar6, Chedar7, Chedar8, Chedar9],
@@ -225,9 +216,8 @@ export const portfolio = [
         id: "9",
         name: "ARMT website",
         slug: "armt-website",
-        description: [
+        description:
             "A website for Public service use to support the Physical Train Infrastructure in the National Capital of Nigeria (Abuja). We were called upon to Design and Develop a website that can display Information concerning the Railway operations as well as create solutions for various problems such as Live Arrivals, Status Updates, Stolen Items and Safety amongst many other things",
-        ],
         tags: [
             "UI design",
             "Product strategy",
@@ -244,9 +234,8 @@ export const portfolio = [
         id: "10",
         name: "ARMT website CMS",
         slug: "armt-website-cms",
-        description: [
+        description:
             "Closely related to the ARMT Main website we created a Content Management system Uniquely built for Updating the User Interface and experience of the ARMT.. The goal behind this was to provide the team at ARMT with a means of consistently making changes to the site without having to wait for us to help out.",
-        ],
         tags: [],
         display: "",
         showcase: [""],
@@ -254,7 +243,7 @@ export const portfolio = [
     {
         id: "11",
         name: "",
-        description: [""],
+        description: "",
         tags: ["", "", "", "", "", ""],
         display: "",
         showcase: [""],

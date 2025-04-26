@@ -14,13 +14,7 @@ const Project = () => {
             <div className="project__header row gap-4 justify-content-between align-items-center">
                 <div className="col-sm-6 d-flex flex-column gap-3">
                     <h1 className="reveal__text">{project.name}</h1>
-                    <div className="project__description flex flex-column gap-2">
-                        {project.description.map((text, index) => (
-                            <p key={index} className="fade__text">
-                                {text}
-                            </p>
-                        ))}
-                    </div>
+                    <p className="fade__text">{project.description}</p>
                 </div>
                 <div className="col-sm-2 d-flex flex-column gap-3">
                     {project.tags.map((tag, index) => (
