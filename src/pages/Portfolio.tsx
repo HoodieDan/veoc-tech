@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { portfolio } from "../lib/data";
+import { useGsapAnimations } from "../hooks/useGsapAnimation";
 
 const Portfolio: React.FC = () => {
     const [showAll, setShowAll] = useState(false);
     const portfolioToShow = showAll ? portfolio : portfolio.slice(0, 6);
+    useGsapAnimations();
 
     return (
         <div className="portfolio">
             <section className="hero">
                 <div className="container d-flex flex-column justify-content-center align-items-center p-lg-5 text-lg-center text-md-center">
-                    <h1>We are a group of passionate experts that prioritize creativity and results above all else</h1>
+                    <h1 className="reveal__text">We are a group of passionate experts that prioritize creativity and results above all else</h1>
 
-                    <p className="mt-3">
+                    <p className="mt-3 fade__text">
                         We are a design agency built on depth, creativity and impact. From strategy to execution, every
                         project is crafted with precision, backed by a global network of exceptional talent.
                     </p>
 
                     <button className="book__call mt-5">Book a call</button>
 
-                    <p className="big mt-5">
+                    <p className="big mt-5 fade__text">
                         Exceptional work doesn’t happen by accident. It is born from sharp strategy, deep expertise, and
                         the relentless pursue of excellence. Over the past 2 years, we’ve worked with several globally
                         recognized brands across every scale and industry, delivering results that resonates.
@@ -31,15 +33,15 @@ const Portfolio: React.FC = () => {
                         project. Together, we create solutions that are as bold as the brands we work with.
                     </p>
 
-                    <h4 className="mt-5">Olayinka D. Adeyefa</h4>
-                    <p className="bigger mb-3">Co-Founder, CEO, Veoc Tech</p>
+                    <h4 className="mt-5 reveal__text">Olayinka D. Adeyefa</h4>
+                    <p className="bigger mb-3 reveal__text">Co-Founder, CEO, Veoc Tech</p>
                 </div>
             </section>
 
             <section className="explore py-5">
                 <div className="container d-flex flex-column justify-content-center align-items-center text-center">
-                    <small className="mt-5">A collection of what we've crafted</small>
-                    <h3 className="mt-2">Explore Our Projects</h3>
+                    <small className="mt-5 reveal__text">A collection of what we've crafted</small>
+                    <h3 className="mt-2 reveal__text">Explore Our Projects</h3>
 
                     {portfolioToShow.map(({ description, name, showcase, slug, tags }) => (
                         <Link key={slug} to={`/portfolio/${slug}`}>
@@ -71,7 +73,9 @@ const Portfolio: React.FC = () => {
                         </Link>
                     ))}
 
-                    <button className="my-5" onClick={() => setShowAll(true)}>View more projects</button>
+                    {!showAll && (
+                        <button className="my-5" onClick={() => setShowAll(true)}>View more projects</button>
+                    )}
                 </div>
             </section>
         </div>
