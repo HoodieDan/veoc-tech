@@ -45,7 +45,7 @@ function AppFooter() {
                         <h6 className='mb-3'>Company</h6>
                         <NavLink to='/services'  className='link'>About</NavLink>
                         <NavLink to='/contact'  className='link'>Contact</NavLink>
-                        <NavLink to='/careers'  className='link'>Careers</NavLink>
+                        {/* <NavLink to='/careers'  className='link'>Careers</NavLink> */}
                         <NavLink to='/'  className='link'>Press</NavLink>
                     </div>
                     <div className="col-lg-4">

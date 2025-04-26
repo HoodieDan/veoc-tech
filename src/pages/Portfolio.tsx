@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { portfolio } from "../lib/data";
 
 const Portfolio: React.FC = () => {
+    const [showAll, setShowAll] = useState(false);
+    const portfolioToShow = showAll ? portfolio : portfolio.slice(0, 6);
+
     return (
         <div className="portfolio">
             <section className="hero">
@@ -38,7 +41,7 @@ const Portfolio: React.FC = () => {
                     <small className="mt-5">A collection of what we've crafted</small>
                     <h3 className="mt-2">Explore Our Projects</h3>
 
-                    {portfolio.slice(0, 6).map(({ description, name, showcase, slug, tags }) => (
+                    {portfolioToShow.map(({ description, name, showcase, slug, tags }) => (
                         <Link key={slug} to={`/portfolio/${slug}`}>
                             <div className="row">
                                 <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
@@ -68,7 +71,7 @@ const Portfolio: React.FC = () => {
                         </Link>
                     ))}
 
-                    <button className="my-5">View more projects</button>
+                    <button className="my-5" onClick={() => setShowAll(true)}>View more projects</button>
                 </div>
             </section>
         </div>
