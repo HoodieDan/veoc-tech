@@ -1,9 +1,11 @@
 import { useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { useGsapAnimations } from "../hooks/useGsapAnimation";
+import useScrollToTop from "../hooks/useScrollToTop";
 import { portfolio } from "../lib/data";
 
 const Project = () => {
+    useScrollToTop();
     useGsapAnimations();
 
     const { slug: projectSlug } = useParams();
