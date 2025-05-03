@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 interface BlogPreviewProps {
     post: {
-        id: number;
+        id: string;
         image: string;
         title: string;
         previewText: string;
@@ -18,6 +18,8 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({ post, index }) => {
     const isFullWidth = () => {
         return ((index + 1) % 4 === 0);
     }
+
+    console.log(post)
 
     return (
         isFullWidth() ? (
