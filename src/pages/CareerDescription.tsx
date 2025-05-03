@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useJob } from '../api/hooks';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ApplicationModal from '../components/ApplicationModal';
+import { stripHtmlTags } from '../helpers/stripHtmlTags';
 
 const CareerDescription: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -49,21 +50,21 @@ const CareerDescription: React.FC = () => {
                     <div className="mb-3">
                         <p>Location: {job?.location || 'Not specified'}</p>
                         <p>Job Type: {job?.job_type || 'Not specified'}</p>
-                        <p>Experience Level: {job?.experience || 'Entry-Level'}</p>
+                        <p>Experience Level: {job?.experience || ''}</p>
                     </div>
 
                     <div className="mb-3">
                         <h5>About Us</h5>
-                        <p>{job?.desc || 'About Veoc Tech'}</p>
+                        <p>{stripHtmlTags(job?.desc) || ''}</p>
                     </div>
 
                     <div className="mb-3">
                         <h5>Job Overview</h5>
-                        <p>{job?.desc || 'We’re looking for a Junior UI/UX Designer'}</p>
+                        <p>{stripHtmlTags(job?.desc) || ''}</p>
                     </div>
                     <div className="mb-3">
                         <h5>Key Responsibilities/Requirements</h5>
-                        <p>{job?.desc || 'See Job Description'}</p>
+                        <p>{stripHtmlTags(job?.desc) || ''}</p>
                     </div>
 
                     <div className="mb-4">

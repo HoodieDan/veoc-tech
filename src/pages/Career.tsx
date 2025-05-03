@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Job } from '../api/services';
 import { useJobs } from '../api/hooks';
+import { stripHtmlTags } from '../helpers/stripHtmlTags';
 
 const Career: React.FC = () => {
     const { data: jobsData, isLoading, error } = useJobs("Open");
@@ -62,7 +63,7 @@ const Career: React.FC = () => {
                                                     <h5>{item.jobTitle}</h5>
                                                     <NavLink to={`/careers/${item.id}`} className='pill grey__pill desktop'>View</NavLink>
                                                 </div>
-                                                <p className='mb-3'>{item.jobDescription}</p>
+                                                <p className='mb-3'>{stripHtmlTags(item.jobDescription)}</p>
                                                 <div className="d-flex flex-wrap mb-4">
                                                     <div className="pill grey__pill me-2">{item.location}</div>
                                                     <div className="pill grey__pill me-2">{item.salary}</div>

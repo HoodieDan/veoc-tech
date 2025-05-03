@@ -41,16 +41,16 @@ export interface ArticlesResponse {
 
 export const jobService = {
   getAll: (status?: string) => {
-    const url = status ? `/api/jobs?status=${status}` : `/api/jobs`;
+    const url = status ? `/api/job?status=${status}` : `/api/jobs`;
     return apiGet<JobsResponse>(url);
   },
-  getById: (id: string) => apiGet<Job>(`/api/jobs/${id}`)
+  getById: (id: string) => apiGet<Job>(`/api/job/${id}`)
 };
 
 export const articleService = {
   getAll: (status?: string) => {
-    const url = status ? `/api/articles?status=${status}` : `/api/articles`;
+    const url = status ? `/api/article?status=${status}` : `/api/articles`;
     return apiGet<ArticlesResponse>(url);
   },
-  getById: (id: string) => apiGet<Article>(`/api/articles/${id}`)
+  getById: (id: string) => apiGet<Article>(`/api/article/${id}`)
 };

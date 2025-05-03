@@ -1,63 +1,140 @@
 import React, { useState } from 'react';
 import BlogPreview from '../components/BlogPreview';
-import { Article } from '../api/services';
 import { useArticles } from '../api/hooks';
+
+// Define the Article interface based on the actual response structure
+interface Article {
+  _id: string;
+  title: string;
+  author: string;
+  tags: string;
+  coverImage: string;
+  content: Array<{
+    type: string;
+    paragraphTitle?: string;
+    paragraphText?: string;
+    imageFile?: string;
+  }>;
+  status: string;
+  createdAt: string;
+  updatedAt: string;
+  date: string;
+}
+
+// Define the expected API response structure
+interface ArticlesResponse {
+  success: boolean;
+  articles: Article[];
+}
 
 const Blog: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [activeTag, setActiveTag] = useState<string | null>(null);
 
-    const { data: articlesData, isLoading, error } = useArticles("published");
+    // Type assertion for the hook return type
+    const { data: articlesData, isLoading, error } = useArticles("published") as {
+        data: ArticlesResponse | undefined;
+        isLoading: boolean;
+        error: Error | null;
+    };
 
-    const processArticles = (): any[] => {
+    // Define return type for the processed articles sections
+    interface SectionData {
+        sectionName: string;
+        tags: string[];
+        posts: Array<{
+            id: string;
+            image: string;
+            title: string;
+            previewText: string;
+            category: string;
+            date: string;
+        }>;
+    }
+
+    const processArticles = (): SectionData[] => {
         if (!articlesData?.articles) return [];
 
-        const recentPosts = articlesData.articles
-            .sort((a: Article, b: Article) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-            .slice(0, 4);
-
-        const featuredPosts = articlesData.articles
-            .filter((article: Article) => article.tags.includes('featured') || Math.random() > 0.5) // Example condition
-            .slice(0, 8);
-
+        // Extract all unique tags from all articles
         const allTags = [...new Set(articlesData.articles.flatMap((article: Article) =>
             article.tags.split(',').map(tag => tag.trim())
         ))];
 
+        // Sort articles by creation date (newest first)
+        const sortedArticles = [...articlesData.articles].sort(
+            (a: Article, b: Article) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
+        
+        // Recent posts are just the newest ones
+        const recentPosts = sortedArticles.slice(0, 4);
+
+        // For featured posts, either use a 'featured' tag or select a subset
+        const featuredPosts = sortedArticles
+            .filter((article: Article) => 
+                article.tags.toLowerCase().includes('featured') || 
+                Math.random() > 0.5 // Example condition for demo
+            )
+            .slice(0, 8);
+
         return [
             {
                 sectionName: 'RECENT POSTS',
-                tags: allTags.slice(0, 2),
-                posts: recentPosts.map((article: Article): any => ({
+                tags: allTags.slice(0, 5), // Show the first 5 tags
+                posts: recentPosts.map((article: Article) => ({
                     id: article._id,
                     image: article.coverImage,
                     title: article.title,
-                    previewText: article.content.find(item => item.type === 'paragraph')?.paragraphText?.substring(0, 150) + '...' || '',
-                    category: article.tags.split(',')[0],
-                    date: new Date(article.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                    previewText: getPreviewText(article),
+                    category: article.tags.split(',')[0].trim(),
+                    date: new Date(article.createdAt).toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                    }),
                 })),
             },
             {
                 sectionName: 'FEATURED BLOGS',
-                tags: allTags.slice(0, 2),
-                posts: featuredPosts.map((article: Article): any => ({
+                tags: allTags.slice(0, 5),
+                posts: featuredPosts.map((article: Article) => ({
                     id: article._id,
                     image: article.coverImage,
                     title: article.title,
-                    previewText: article.content.find(item => item.type === 'paragraph')?.paragraphText?.substring(0, 150) + '...' || '',
-                    category: article.tags.split(',')[0],
-                    date: new Date(article.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                    previewText: getPreviewText(article),
+                    category: article.tags.split(',')[0].trim(),
+                    date: new Date(article.createdAt).toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                    }),
                 })),
             }
         ];
     };
 
-    const filterPosts = (previews: any[]): any[] => {
+    // Helper function to safely extract preview text from an article
+    const getPreviewText = (article: Article): string => {
+        if (!article.content || article.content.length === 0) {
+            return 'No preview available...';
+        }
+        
+        const paragraphContent = article.content.find(item => 
+            item.type === 'paragraph' && item.paragraphText
+        );
+        
+        if (paragraphContent && paragraphContent.paragraphText) {
+            return paragraphContent.paragraphText.substring(0, 150) + '...';
+        }
+        
+        return 'No preview available...';
+    };
+
+    const filterPosts = (previews: SectionData[]): SectionData[] => {
         if (!searchTerm && !activeTag) return previews;
 
         return previews.map(preview => ({
             ...preview,
-            posts: preview.posts.filter((post: any) => {
+            posts: preview.posts.filter((post) => {
                 const matchesSearch = !searchTerm ||
                     post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                     post.category.toLowerCase().includes(searchTerm.toLowerCase());
@@ -87,11 +164,12 @@ const Blog: React.FC = () => {
     >
         Loading blogs...
     </div>;
+    
     if (error) return <div
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
     >
-        Error loading blogs: {error.message}
+        Error loading blogs: {error instanceof Error ? error.message : String(error)}
     </div>;
 
     return (
@@ -118,7 +196,7 @@ const Blog: React.FC = () => {
                             <div className="header d-flex justify-content-between align-items-center flex-wrap mb-3 mt-5">
                                 <h5 className='me-3 py-3'>{preview.sectionName}</h5>
                                 <div className="d-flex flex-wrap py-lg-0 py-md-0 py-3">
-                                    {preview.tags.map((tag: any, tagIndex: any) => (
+                                    {preview.tags.map((tag: string, tagIndex: number) => (
                                         <div
                                             key={`tag-${tagIndex}`}
                                             className={`pill ${activeTag === tag ? 'active' : ''}`}
@@ -133,7 +211,7 @@ const Blog: React.FC = () => {
 
                             <div className="row">
                                 {preview.posts.length > 0 ? (
-                                    preview.posts.map((post: any, index: any) => (
+                                    preview.posts.map((post, index: number) => (
                                         <BlogPreview key={`post-${post.id}-${index}`} post={post} index={index} />
                                     ))
                                 ) : (
