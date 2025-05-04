@@ -61,7 +61,7 @@ const Career: React.FC = () => {
                                             <div className='right pt-3' key={`job-${item.id}-${jobIndex}`}>
                                                 <div className="d-flex justify-content-between align-items-center mb-3">
                                                     <h5>{item.jobTitle}</h5>
-                                                    <NavLink to={`/careers/${item.id}`} className='pill grey__pill desktop'>View</NavLink>
+                                                    <NavLink to={`/careers/${item.id}`} className='pill grey__pill'>View</NavLink>
                                                 </div>
                                                 <p className='mb-3'>{stripHtmlTags(item.jobDescription)}</p>
                                                 <div className="d-flex flex-wrap mb-4">
