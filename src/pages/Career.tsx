@@ -34,14 +34,14 @@ const Career: React.FC = () => {
 
     const jobs = groupJobsByDepartment();
 
-    if (isLoading) return <div
+    if (isLoading) return <section
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
-    >Loading job listings...</div>;
-    if (error) return <div
+    >Loading job listings...</section>;
+    if (error) return <section
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
-    >Error loading jobs: {error.message}</div>;
+    >Error loading jobs: {error.message}</section>;
 
     return (
         <div className='career__page'>
@@ -61,7 +61,7 @@ const Career: React.FC = () => {
                                             <div className='right pt-3' key={`job-${item.id}-${jobIndex}`}>
                                                 <div className="d-flex justify-content-between align-items-center mb-3">
                                                     <h5>{item.jobTitle}</h5>
-                                                    <NavLink to={`/careers/${item.id}`} className='pill grey__pill desktop'>View</NavLink>
+                                                    <NavLink to={`/careers/${item.id}`} className='pill grey__pill'>View</NavLink>
                                                 </div>
                                                 <p className='mb-3'>{stripHtmlTags(item.jobDescription)}</p>
                                                 <div className="d-flex flex-wrap mb-4">
