@@ -158,19 +158,19 @@ const Blog: React.FC = () => {
         setActiveTag(activeTag === tag ? null : tag);
     };
 
-    if (isLoading) return <div
+    if (isLoading) return <section
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
     >
         Loading blogs...
-    </div>;
+    </section>;
     
-    if (error) return <div
+    if (error) return <section
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
     >
         Error loading blogs: {error instanceof Error ? error.message : String(error)}
-    </div>;
+    </section>;
 
     return (
         <div className='blog__page'>

@@ -15,18 +15,22 @@ const CareerDescription: React.FC = () => {
         setModalIsOpen(!modalIsOpen);
     };
 
+    const handleAapply = (link: string) => {
+        window.open(link, "_blank");
+    };
+
     const goBack = () => {
         navigate(-1);
     };
 
-    if (isLoading) return <div
+    if (isLoading) return <section
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
-    >Loading job listings...</div>;
-    if (error) return <div
+    >Loading job listings...</section>;
+    if (error) return <section
         className="d-flex align-items-center justify-content-center text-center"
         style={{ height: 'calc(100dvh - 100px)' }}
-    >Error loading jobs: {error.message}</div>;
+    >Error loading jobs: {error.message}</section>;
 
     return (
         <div className={`career__description ${modalIsOpen ? 'modal__open' : ''}`}>
@@ -42,7 +46,7 @@ const CareerDescription: React.FC = () => {
                             <h5>{job?.title || 'Job Title'}</h5>
                         </div>
 
-                        <button onClick={toggleModalVisibility}>
+                        <button onClick={()=>handleAapply(job?.submission_link)} className='desktop'>
                             Apply here
                         </button>
                     </div>
@@ -76,7 +80,7 @@ const CareerDescription: React.FC = () => {
                         </ul>
                     </div>
 
-                    <button className="mb-5" onClick={toggleModalVisibility}>Apply Here</button>
+                    <button className="mb-5 phone" onClick={() => handleAapply(job?.submission_link)}>Apply Here</button>
                 </div>
             </section>
         </div>

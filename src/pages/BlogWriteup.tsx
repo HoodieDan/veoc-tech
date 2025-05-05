@@ -7,14 +7,14 @@ const BlogWriteUp: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { data, isLoading, error } = useArticle(id!);
 
-  if (isLoading) return <div
+  if (isLoading) return <section
     className="d-flex align-items-center justify-content-center text-center"
     style={{ height: 'calc(100dvh - 100px)' }}
-  >Loading Blog...</div>;
-  if (error) return <div
+  >Loading Blog...</section>;
+  if (error) return <section
     className="d-flex align-items-center justify-content-center text-center"
     style={{ height: 'calc(100dvh - 100px)' }}
-  >Error loading Blog: {error.message}</div>;
+  >Error loading Blog: {error.message}</section>;
 
   return (
     <div className='blog__writeup'>
