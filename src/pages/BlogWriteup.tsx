@@ -33,11 +33,11 @@ const BlogWriteUp: React.FC = () => {
           </h1>
 
           <div className="d-flex gap-3">
-            <p><span className="text-gray">Written By:</span> {data?.article?.author || 'Jumai Idowu'}</p>
+            <p><span className="text-gray">Written By:</span> {data?.article?.author || 'Veoc Tech'}</p>
             <p><span className="text-gray">Updated On:</span> {data?.article?.updatedAt ? new Date(data?.article.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : 'December 13, 2023'}</p>
           </div>
 
-          <img src={data?.article?.coverImage || blogImage} alt="blog image" className="img-fluid my-4" />
+          <img src={data?.article?.coverImage || blogImage} alt="blog image" className="img-fluid my-4 blog__image__header" />
 
           <div className="writeup row">
             <div className="col-lg-4 col-md-4 mb-4 text-gray">

@@ -26,7 +26,7 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({ post, index }) => {
         isFullWidth() ? (
             <>
                 <NavLink className="blog__preview py-3 row d-none d-lg-flex" to={`/blog/${post.id}`}>
-                    <img src={post.image} alt="blog preview image" className='img-fluid col-lg-7' />
+                    <img src={post.image} alt="blog preview image" className='blog__preview__image img-fluid col-lg-7' />
                     <div className="col-lg-5">
                         <div className="d-flex flex-wrap align-items-center">
                             <div className="pill purple__pill mt-2 me-4">{post.category}</div>
@@ -37,7 +37,7 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({ post, index }) => {
                     </div>
                 </NavLink>
                 <NavLink className="blog__preview col-lg-4 col-md-6 py-3 d-lg-none" to={`/blog/${post.id}`}>
-                    <img src={post.image} alt="blog preview image" className='img-fluid' />
+                    <img src={post.image} alt="blog preview image" className='blog__preview__image img-fluid' />
                     <h5 className='mt-2'>{post.title}</h5>
                     <p className='grey mt-2'>{post.previewText}</p>
                     <div className="d-flex flex-wrap align-items-center">
@@ -48,7 +48,7 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({ post, index }) => {
             </>
         ) : (
             <NavLink className="blog__preview col-lg-4 col-md-6 py-3" to={`/blog/${post.id}`} >
-                <img src={post.image ? post.image : blogImage} alt="blog preview image" className='img-fluid' />
+                <img src={post.image ? post.image : blogImage} alt="blog preview image" className='blog__preview__image img-fluid' />
                 <h5 className='mt-2'>{post.title}</h5>
                 <p className='grey mt-2'>{post.previewText}</p>
                 <div className="d-flex flex-wrap align-items-center">

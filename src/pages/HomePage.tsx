@@ -9,10 +9,10 @@ import projectIdkk from '../assets/images/tobyteq.png';
 import check from '../assets/images/check.svg';
 import star from '../assets/images/star.svg';
 import stopwatch from '../assets/images/stopwatch.svg';
-import partner1 from '../assets/images/partner-1.png';
-import partner2 from '../assets/images/partner-2.png';
-import partner3 from '../assets/images/partner-3.png';
-import partner4 from '../assets/images/partner-4.png';
+// import partner1 from '../assets/images/partner-1.png';
+// import partner2 from '../assets/images/partner-2.png';
+// import partner3 from '../assets/images/partner-3.png';
+// import partner4 from '../assets/images/partner-4.png';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { useGsapAnimations } from '../hooks/useGsapAnimation';
@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
                 </div>
             </section>
 
-            <section className="partners">
+            {/* <section className="partners">
                 <div className="container py-5">
                     <h2 className='reveal__text'>Our Partners</h2>
 
@@ -216,7 +216,7 @@ const HomePage: React.FC = () => {
                         <button className="mt-3">Become a partner</button>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="faqs">
                 <div className="container py-5">

@@ -15,4 +15,11 @@
             padding-top: 100px;
         }
     }
+
+    .blog__image__header {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        border-radius: 32px;
+    }
 }
