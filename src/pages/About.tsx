@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutHeroImg from '../assets/images/aboutHeroImg.png';
 import storyImg from '../assets/images/storyImg.png';
-import me from '../assets/images/me.jpg';
+// import me from '../assets/images/me.jpg';
 import projectGlobalink from '../assets/images/project-globalink.png';
 import projectWatersmith from '../assets/images/project-watersmith.png';
 import projectPromptGuardian from '../assets/images/project-prompt-guardian.png';
@@ -104,7 +104,7 @@ const About: React.FC = () => {
 					</div>
 				</div>
 
-				<div className="marquee mt-5">
+				{/* <div className="marquee mt-5">
 					<ul>
 						{Array.from({ length: 6 }).map((_, index) => (
 							<li key={index}>
@@ -143,7 +143,7 @@ const About: React.FC = () => {
 							</li>
 						))}
 					</ul>
-				</div>
+				</div> */}
 			</section>
 
 			<section className="explore py-5">
