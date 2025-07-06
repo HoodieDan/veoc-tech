@@ -83,7 +83,26 @@ import Chedar7 from "../assets/images/pngs/chedar-7.png";
 import Chedar8 from "../assets/images/pngs/chedar-8.png";
 import Chedar9 from "../assets/images/pngs/chedar-9.png";
 // ARMT website showcase images
+import ARMT1 from "../assets/images/pngs/armt-1.png";
+import ARMT10 from "../assets/images/pngs/armt-10.png";
+import ARMT11 from "../assets/images/pngs/armt-11.png";
+import ARMT2 from "../assets/images/pngs/armt-2.png";
+import ARMT3 from "../assets/images/pngs/armt-3.png";
+import ARMT4 from "../assets/images/pngs/armt-4.png";
+import ARMT5 from "../assets/images/pngs/armt-5.png";
+import ARMT6 from "../assets/images/pngs/armt-6.png";
+import ARMT7 from "../assets/images/pngs/armt-7.png";
+import ARMT8 from "../assets/images/pngs/armt-8.png";
+import ARMT9 from "../assets/images/pngs/armt-9.png";
 // ARMT website CMS showcase images
+import ARMTCMS1 from "../assets/images/pngs/armt-website-1.png";
+import ARMTCMS2 from "../assets/images/pngs/armt-website-2.png";
+import ARMTCMS3 from "../assets/images/pngs/armt-website-3.png";
+import ARMTCMS4 from "../assets/images/pngs/armt-website-4.png";
+import ARMTCMS5 from "../assets/images/pngs/armt-website-5.png";
+import ARMTCMS6 from "../assets/images/pngs/armt-website-6.png";
+import ARMTCMS7 from "../assets/images/pngs/armt-website-7.png";
+import ARMTCMS8 from "../assets/images/pngs/armt-website-8.png";
 
 export const portfolio = [
     {
@@ -92,9 +111,29 @@ export const portfolio = [
         slug: "aurora-ai",
         description:
             "An AI powered Market Research tool built for the purpose of allowing users create prompts and flows that generate User research and Market Research Data. Our challenge was crafting the User Interface and Experience of the platform while taking into context the most efficient ways to undertake tasks for users",
-        tags: ["UI design", "Product strategy", "User research", "Usability test", "UX Design", "Prototyping"],
+        tags: [
+            "UI design",
+            "Product strategy",
+            "User research",
+            "Usability test",
+            "UX Design",
+            "Prototyping",
+        ],
         display: "",
-        showcase: [Aurora1, Aurora2, Aurora3, Aurora4, Aurora5, Aurora6, Aurora7, Aurora8, Aurora9, Aurora10, Aurora11],
+        fullSpanIndices: [1, 4, 9, 10, 11],
+        showcase: [
+            Aurora1,
+            Aurora2,
+            Aurora3,
+            Aurora4,
+            Aurora5,
+            Aurora6,
+            Aurora7,
+            Aurora8,
+            Aurora9,
+            Aurora10,
+            Aurora11,
+        ],
     },
     {
         id: "2",
@@ -102,8 +141,16 @@ export const portfolio = [
         slug: "prompt-plumber-ai",
         description:
             "A prompt engineering platform that allows for Beginners and Intermediate level prompt Engineers and AI enthusiast to create very effective prompts that get them their expected outcomes using Popular Large Language Model. Our role in this project was to create the Sign up, Onboarding, Tutorial and Entire user flow as well as pre flow including all the Website pages that Aid conversions.",
-        tags: ["UI design", "Product strategy", "User research", "Usability test", "UI/UX Testing", "Prototyping"],
+        tags: [
+            "UI design",
+            "Product strategy",
+            "User research",
+            "Usability test",
+            "UI/UX Testing",
+            "Prototyping",
+        ],
         display: "",
+        fullSpanIndices: [1, 4, 9, 10, 11],
         showcase: [
             PromptPlumber1,
             PromptPlumber2,
@@ -133,7 +180,20 @@ export const portfolio = [
             "SEO Optimization",
         ],
         display: "",
-        showcase: [Nexant1, Nexant2, Nexant3, Nexant4, Nexant5, Nexant6, Nexant7, Nexant8, Nexant9, Nexant10, Nexant11],
+        fullSpanIndices: [1, 4, 9, 10, 11],
+        showcase: [
+            Nexant1,
+            Nexant2,
+            Nexant3,
+            Nexant4,
+            Nexant5,
+            Nexant6,
+            Nexant7,
+            Nexant8,
+            Nexant9,
+            Nexant10,
+            Nexant11,
+        ],
     },
     {
         id: "4",
@@ -141,8 +201,15 @@ export const portfolio = [
         slug: "prompt-guardian",
         description:
             "An AI powered solution for Developers to be able to create better Software by running their code through the AI tool to get Technical Feedback and Decrease the time and effort spent in manually looking for Bugs. Our Task was to create a Mid-Fidelity product that could communicate the Idea of how the product would work before the High Fidelity Design commenced",
-        tags: ["UI design", "Mid-fidelity", "User research", "Usability test", "Prototyping"],
+        tags: [
+            "UI design",
+            "Mid-fidelity",
+            "User research",
+            "Usability test",
+            "Prototyping",
+        ],
         display: "",
+        fullSpanIndices: [1, 4, 5, 8],
         showcase: [
             PromptGuardian1,
             PromptGuardian2,
@@ -160,9 +227,26 @@ export const portfolio = [
         slug: "alomaa",
         description:
             "We collaborated with another Agency to bring the site to life after the Design had been worked on and iterated using Wordpress and Elementor pro as our tools of choice for this project",
-        tags: ["Website Design", "Word press", "Elementor pro", "HTML & CSS", "Web development"],
+        tags: [
+            "Website Design",
+            "Word press",
+            "Elementor pro",
+            "HTML & CSS",
+            "Web development",
+        ],
         display: "",
-        showcase: [Alomaa1, Alomaa2, Alomaa3, Alomaa4, Alomaa5, Alomaa6, Alomaa7, Alomaa8, Alomaa9],
+        fullSpanIndices: [1, 4, 5, 8, 9],
+        showcase: [
+            Alomaa1,
+            Alomaa2,
+            Alomaa3,
+            Alomaa4,
+            Alomaa5,
+            Alomaa6,
+            Alomaa7,
+            Alomaa8,
+            Alomaa9,
+        ],
     },
     {
         id: "6",
@@ -179,6 +263,7 @@ export const portfolio = [
             "Web development",
         ],
         display: "",
+        fullSpanIndices: [1, 2, 3, 8, 9, 10],
         showcase: [
             Fleetwaters1,
             Fleetwaters2,
@@ -198,9 +283,25 @@ export const portfolio = [
         slug: "tobyteq-website",
         description:
             "A website for a Post-production Video Editing Agency that is Designed to communicate the Push towards innovation, While ensuring Adherence to the Company's Brand Identity and Strategic lean towards Boldness and Flare. Design and Development were done Internally with WordPress as the Tool of Choice",
-        tags: ["UI design", "Brand strategy", "WordPress", "HTML & CSS", "Usability & QA test", "Web development"],
+        tags: [
+            "UI design",
+            "Brand strategy",
+            "WordPress",
+            "HTML & CSS",
+            "Usability & QA test",
+            "Web development",
+        ],
         display: "",
-        showcase: [Tobyteq1, Tobyteq2, Tobyteq3, Tobyteq4, Tobyteq5, Tobyteq6, Tobyteq7],
+        fullSpanIndices: [1, 3, 4, 5, 6, 7],
+        showcase: [
+            Tobyteq1,
+            Tobyteq2,
+            Tobyteq3,
+            Tobyteq4,
+            Tobyteq5,
+            Tobyteq6,
+            Tobyteq7,
+        ],
     },
     {
         id: "8",
@@ -208,44 +309,85 @@ export const portfolio = [
         slug: "chedar-website",
         description:
             "A French SaaS Website where we collaborated with the in-house team and our role was to focus on maintaining a heavy use of the company's brand colours while creating complementary visual assets that communicate the Products features. We worked only on it’s design and Website Assets only for this project",
-        tags: ["UI design", "Visual Assets", "Illustrator", "Photoshop", "Visual design"],
+        tags: [
+            "UI design",
+            "Visual Assets",
+            "Illustrator",
+            "Photoshop",
+            "Visual design",
+        ],
         display: "",
-        showcase: [Chedar1, Chedar2, Chedar3, Chedar4, Chedar5, Chedar6, Chedar7, Chedar8, Chedar9],
+        fullSpanIndices: [1, 2, 3, 6, 7, 8, 9],
+        showcase: [
+            Chedar1,
+            Chedar2,
+            Chedar3,
+            Chedar4,
+            Chedar5,
+            Chedar6,
+            Chedar7,
+            Chedar8,
+            Chedar9,
+        ],
     },
-    // {
-    //     id: "9",
-    //     name: "ARMT website",
-    //     slug: "armt-website",
-    //     description:
-    //         "A website for Public service use to support the Physical Train Infrastructure in the National Capital of Nigeria (Abuja). We were called upon to Design and Develop a website that can display Information concerning the Railway operations as well as create solutions for various problems such as Live Arrivals, Status Updates, Stolen Items and Safety amongst many other things",
-    //     tags: [
-    //         "UI design",
-    //         "Product strategy",
-    //         "User research",
-    //         "QA & Usability test",
-    //         "HTML & CSS",
-    //         "SEO Optimization",
-    //         "Web development",
-    //     ],
-    //     display: "",
-    //     showcase: [""],
-    // },
-    // {
-    //     id: "10",
-    //     name: "ARMT website CMS",
-    //     slug: "armt-website-cms",
-    //     description:
-    //         "Closely related to the ARMT Main website we created a Content Management system Uniquely built for Updating the User Interface and experience of the ARMT.. The goal behind this was to provide the team at ARMT with a means of consistently making changes to the site without having to wait for us to help out.",
-    //     tags: [],
-    //     display: "",
-    //     showcase: [""],
-    // },
+    {
+        id: "9",
+        name: "ARMT website",
+        slug: "armt-website",
+        description:
+            "A website for Public service use to support the Physical Train Infrastructure in the National Capital of Nigeria (Abuja). We were called upon to Design and Develop a website that can display Information concerning the Railway operations as well as create solutions for various problems such as Live Arrivals, Status Updates, Stolen Items and Safety amongst many other things",
+        tags: [
+            "UI design",
+            "Product strategy",
+            "User research",
+            "QA & Usability test",
+            "HTML & CSS",
+            "SEO Optimization",
+            "Web development",
+        ],
+        display: "",
+        fullSpanIndices: [1, 4, 9, 10, 11],
+        showcase: [
+            ARMT1,
+            ARMT2,
+            ARMT3,
+            ARMT4,
+            ARMT5,
+            ARMT6,
+            ARMT7,
+            ARMT8,
+            ARMT9,
+            ARMT10,
+            ARMT11,
+        ],
+    },
+    {
+        id: "10",
+        name: "ARMT website CMS",
+        slug: "armt-website-cms",
+        description:
+            "Closely related to the ARMT Main website we created a Content Management system Uniquely built for Updating the User Interface and experience of the ARMT.. The goal behind this was to provide the team at ARMT with a means of consistently making changes to the site without having to wait for us to help out.",
+        tags: [],
+        display: "",
+        fullSpanIndices: [1, 4, 5, 8],
+        showcase: [
+            ARMTCMS1,
+            ARMTCMS2,
+            ARMTCMS3,
+            ARMTCMS4,
+            ARMTCMS5,
+            ARMTCMS6,
+            ARMTCMS7,
+            ARMTCMS8,
+        ],
+    },
     // {
     //     id: "11",
     //     name: "",
     //     description: "",
     //     tags: ["", "", "", "", "", ""],
     //     display: "",
+    // fullSpanIndices: [],
     //     showcase: [""],
     // },
 ];
