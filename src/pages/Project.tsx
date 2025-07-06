@@ -9,7 +9,10 @@ const Project = () => {
     useGsapAnimations();
 
     const { slug: projectSlug } = useParams();
-    const project = useMemo(() => portfolio.find(({ slug }) => slug === projectSlug), [projectSlug])!;
+    const project = useMemo(
+        () => portfolio.find(({ slug }) => slug === projectSlug),
+        [projectSlug],
+    )!;
 
     return (
         <section className="project">
@@ -28,14 +31,23 @@ const Project = () => {
             </div>
             <hr className="project__separator" />
             <div className="project__showcase">
-                {project.showcase.map((image, index) => (
-                    <img
-                        key={image + index}
-                        src={image}
-                        alt={`${project.name} ${index + 1}`}
-                        className="img-fluid project__showcase__image"
-                    />
-                ))}
+                {project.showcase.map((image, index) => {
+                    const fullSpanIndices = project.fullSpanIndices;
+                    const isFullSpan = fullSpanIndices.includes(index + 1);
+
+                    return (
+                        <img
+                            key={image + index}
+                            src={image}
+                            alt={`${project.name} ${index + 1}`}
+                            className={`img-fluid ${
+                                isFullSpan
+                                    ? "project__showcase__image--full-span"
+                                    : ""
+                            }`}
+                        />
+                    );
+                })}
             </div>
         </section>
     );
