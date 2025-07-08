@@ -48,7 +48,7 @@ const Portfolio: React.FC = () => {
                             <div className="row">
                                 <div className="col-lg-4 col-md-4 mt-lg-3 mt-5">
                                     <div className="project__desc p-4 text-start h-100 d-flex flex-column justify-content-between">
-                                        <h4 className="mb-3">{name}</h4>
+                                        <h4 className="reveal__text mb-3">{name}</h4>
                                         {Array.from({ length: 2 }).map((_, index) => (
                                             <p key={index} className="mb-2">
                                                 {description}
