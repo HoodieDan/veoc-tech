@@ -14,7 +14,9 @@ import ContactUs from "./pages/Contact";
 import HomePage from "./pages/HomePage";
 import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
-import Services from "./pages/Services";
+import DesignService from "./pages/services/DesignService";
+import DevService from "./pages/services/DevService";
+import Services from "./pages/services/Services";
 
 function App() {
     return (
@@ -24,12 +26,21 @@ function App() {
             <div className="routes">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/services" element={<Services />} />
+
+                    <Route path="/services">
+                        <Route index element={<Services />} />
+                        <Route path="design" element={<DesignService />} />
+                        <Route path="dev" element={<DevService />} />
+                    </Route>
+
                     <Route path="/academy" element={<Academy />} />
                     <Route path="/about-us" element={<About />} />
                     <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/careers" element={<Career />} />
-                    <Route path="/careers/:id" element={<CareerDescription />} />
+                    <Route
+                        path="/careers/:id"
+                        element={<CareerDescription />}
+                    />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/blog/:id" element={<BlogWriteUp />} />
                     <Route path="/portfolio" element={<Portfolio />} />

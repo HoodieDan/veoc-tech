@@ -89,3 +89,14 @@
 @mixin transition {
   transition: all 1s $ease-out-expo;
 }
+
+@mixin btn-purple-gradient {
+  background: $bg-purple-gradient;
+  border-radius: 1rem;
+  font-weight: bold;
+  width: fit-content;
+  display: grid;
+  place-content: center;
+  padding: 1rem 2rem;
+  outline: 5px solid rgba(101, 2, 180, 0.2);
+}
