@@ -2,10 +2,12 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  -webkit-user-select: none;
   user-select: none;
 }
 
-html, body {
+html,
+body {
   line-height: 1;
   font-family: $font-inter !important;
   background-color: $color-black;
@@ -25,8 +27,9 @@ html, body {
   }
 }
 
-section, .footer {
-  background: 
+section,
+.footer {
+  background:
     radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 600px 600px no-repeat,
     radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 500px 500px no-repeat,
     radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 80% 20% / 750px 750px no-repeat;
@@ -39,7 +42,7 @@ section, .footer {
 }
 
 .hero__section {
-  background: 
+  background:
     radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) top left / 600px 600px no-repeat,
     radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) bottom right / 500px 500px no-repeat,
     radial-gradient(circle, rgba(101, 2, 180, 0.20) 0%, rgba(101, 2, 180, 0) 70%) 80% 20% / 750px 750px no-repeat,
@@ -207,12 +210,10 @@ h6 {
 //   font-family: $font-inter;
 //   background-color: $color-white;
 //   color: $color-black;
-  
 //   @include media('<phone') {
 //     overflow-x: hidden;
 //   }
 // }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -232,7 +233,8 @@ img {
   vertical-align: middle;
 }
 
-input, textarea {
+input,
+textarea {
   border: 1px solid $color-grey;
   width: 100%;
   border-radius: 8px;
@@ -282,7 +284,8 @@ button {
   align-items: center;
   cursor: pointer;
   font-weight: 500;
-  outline: 5px solid rgba(101, 2, 180, 0.2);;
+  outline: 5px solid rgba(101, 2, 180, 0.2);
+  ;
 
   &.outline {
     background: none;
@@ -317,7 +320,7 @@ button {
 
 .phone {
   display: none !important;
-  
+
   @include media('<phone') {
     display: block !important;
   }
@@ -366,6 +369,6 @@ button {
 
 @keyframes scroll {
   to {
-      transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px));
   }
 }

@@ -391,3 +391,48 @@ export const portfolio = [
     //     showcase: [""],
     // },
 ];
+
+export const designProcess = [
+    {
+        id: 1,
+        number: "01.",
+        title: "Discovery session",
+        description:
+            "It all begins with a conversation. We'll delve into your business objectives, target audience, brand identity, and specific requirements for your website. This session helps us lay the foundation for a design that truly reflects your needs.",
+    },
+    {
+        id: 2,
+        number: "02.",
+        title: "Strategy & Planning",
+        description:
+            "Based on our discovery session, we develop a detailed plan and strategy for your website design. This includes defining the sitemap, user flows, key features, and overall design direction. We ensure every element is aligned with your goals.",
+    },
+    {
+        id: 3,
+        number: "03.",
+        title: "Design & Visual Creation",
+        description:
+            "Our talented designers craft the visual elements of your website, focusing on aesthetics, branding consistency, and user engagement. We pay close attention to typography, imagery, and overall visual appeal to create an impactful online presence.",
+    },
+    {
+        id: 4,
+        number: "04.",
+        title: "Development & Coding",
+        description:
+            "Our development team brings the designs to life with clean, efficient code. We focus on creating responsive, fast-loading websites that work seamlessly across all devices and browsers, ensuring optimal user experience.",
+    },
+    {
+        id: 5,
+        number: "05.",
+        title: "Testing & Quality Assurance",
+        description:
+            "We thoroughly test your website across different devices, browsers, and scenarios to ensure everything works perfectly. Our quality assurance process includes performance optimization, security checks, and user experience validation.",
+    },
+    {
+        id: 6,
+        number: "06.",
+        title: "Launch & Support",
+        description:
+            "We handle the deployment process and ensure your website goes live smoothly. After launch, we provide ongoing support, maintenance, and updates to keep your website performing at its best and growing with your business.",
+    },
+];
