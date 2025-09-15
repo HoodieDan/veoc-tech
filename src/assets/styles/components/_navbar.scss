@@ -10,6 +10,7 @@ nav {
         padding-bottom: 0.8rem;
         border: 1px solid $color-nav-border;
         border-radius: 60px;
+
         .nav-link {
             .logo-name {
                 padding-left: 0.5rem;
@@ -30,11 +31,22 @@ nav {
                     color: $color-nav-border;
                 }
             }
+
+            .nav-menu {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                span {
+                    cursor: pointer;
+                }
+            }
         }
 
         div.hamburger-react {
             display: none;
             z-index: z('hamburger');
+
             div {
                 background: $color-white !important;
 
@@ -83,20 +95,21 @@ div.backdrop.mobile {
 //         display: none;
 //     }
 // }
-
 @media (max-width: 768px) {
     nav {
-        .container.nav {  
+        .container.nav {
             flex-wrap: nowrap;
             border: none;
 
             div.mid-links {
                 display: none !important;
             }
+
             div.hamburger-react {
                 display: inline-block;
                 margin-left: 16px;
             }
+
             .right-links {
                 button {
                     transform: scale(0.8);
@@ -104,6 +117,7 @@ div.backdrop.mobile {
             }
         }
     }
+
     div.backdrop.mobile {
         display: block;
     }
