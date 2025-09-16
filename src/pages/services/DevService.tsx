@@ -3,6 +3,7 @@ import ServiceHero from "@/components/services/ServiceHero";
 import ServiceImpact from "@/components/services/ServiceImpact";
 import ServiceProcess from "@/components/services/ServiceProcess";
 import ServiceTestimonial from "@/components/services/ServiceTestimonial";
+import ServiceTools from "@/components/services/ServiceTools";
 import ServiceWork from "@/components/services/ServiceWork";
 import { useGsapAnimations } from "@/hooks/useGsapAnimation";
 
@@ -23,6 +24,7 @@ const DevService = () => {
             />
             <ServiceImpact />
             <ServiceProcess />
+            <ServiceTools />
             <ServiceWork />
             <ServiceFAQ />
             <ServiceTestimonial />

@@ -159,6 +159,45 @@
         }
     }
 
+    &__tools {
+        padding: 4rem 0;
+
+        @include media('<phone') {
+            padding: 4rem 1rem;
+        }
+
+        &__bottom {
+            &__categories {
+                div {
+                    font-weight: 600;
+                    padding: 10px;
+                    border-radius: 20px;
+                    background-color: $color-white;
+                    color: $color-black;
+
+                    &:first-child {
+                        background: $bg-purple-gradient;
+                        color: white;
+                    }
+                }
+            }
+
+            &__stack {
+                display: grid;
+                @include grid-col(5);
+                gap: 4rem 7.5rem;
+                justify-items: center;
+                align-items: center;
+
+                @include media('<phone') {
+                    @include grid-col(3);
+                    gap: 2rem;
+                    justify-items: start;
+                }
+            }
+        }
+    }
+
     &__work {
         padding: 4rem 0;
 
