@@ -113,6 +113,12 @@ import MongoDBImg from "@/assets/images/pngs/mongodb.png";
 import PHPImg from "@/assets/images/pngs/php.png";
 import PythonImg from "@/assets/images/pngs/python.png";
 import ReactjsImg from "@/assets/images/pngs/reactjs.png";
+// Clients images
+import AlomaImg from "@/assets/images/pngs/aloma.png";
+import ChedarImg from "@/assets/images/pngs/chedar.png";
+import FleetWaterImg from "@/assets/images/pngs/fleet-water.png";
+import NexantImg from "@/assets/images/pngs/nexant.png";
+import TobyTeqImg from "@/assets/images/pngs/tobyteq.png";
 
 export const portfolio = [
     {
@@ -489,4 +495,12 @@ export const serviceToolsImgs = [
     GolangImg,
     MongoDBImg,
     LaravelImg,
+];
+
+export const ServiceClientsImgs = [
+    AlomaImg,
+    FleetWaterImg,
+    ChedarImg,
+    NexantImg,
+    TobyTeqImg,
 ];
