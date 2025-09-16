@@ -1,4 +1,5 @@
 import { designProcess } from "@/lib/data";
+import ServiceProcessContent from "./ServiceProcessContent";
 
 const ServiceProcess = () => {
     return (
@@ -7,20 +8,7 @@ const ServiceProcess = () => {
                 <small className="fade__text">OUR PROCESS</small>
             </div>
 
-            <div className="service__process__content row">
-                {designProcess.map((process) => (
-                    <div
-                        key={process.id}
-                        className="service__process__content__item col-12 col-md-4 d-flex flex-column gap-5 p-3"
-                    >
-                        <span className="fade__text">{process.number}</span>
-                        <div className="d-flex flex-column gap-3">
-                            <h4 className="reveal__text">{process.title}</h4>
-                            <p className="fade__text">{process.description}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
+            <ServiceProcessContent serviceProcess={designProcess} />
         </div>
     );
 };

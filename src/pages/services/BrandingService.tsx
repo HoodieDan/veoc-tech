@@ -1,8 +1,8 @@
+import ServiceBrandingBenefits from "@/components/services/ServiceBrandingBenefits";
 import ServiceBrandingProcess from "@/components/services/ServiceBrandingProcess";
 import ServiceClients from "@/components/services/ServiceClients";
 import ServiceFAQ from "@/components/services/ServiceFAQ";
 import ServiceHero from "@/components/services/ServiceHero";
-import ServiceProcess from "@/components/services/ServiceProcess";
 import ServiceTestimonial from "@/components/services/ServiceTestimonial";
 import ServiceWork from "@/components/services/ServiceWork";
 import { useGsapAnimations } from "@/hooks/useGsapAnimation";
@@ -26,7 +26,7 @@ const BrandingService = () => {
             />
             <ServiceClients />
             <ServiceBrandingProcess />
-            <ServiceProcess />
+            <ServiceBrandingBenefits />
             <ServiceWork />
             <ServiceFAQ />
             <ServiceTestimonial />
