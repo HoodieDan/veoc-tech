@@ -159,6 +159,33 @@
         }
     }
 
+    &__branding-process {
+        padding: 5rem;
+
+        @include media('<phone') {
+            padding: 4rem 1rem;
+        }
+    }
+
+    &__clients {
+        padding: 4rem 5rem;
+
+        @include media('<phone') {
+            padding: 4rem 1rem;
+        }
+
+        &__bottom {
+            &__stack {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 4rem;
+            }
+        }
+    }
+
     &__tools {
         padding: 4rem 0;
 
