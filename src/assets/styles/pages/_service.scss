@@ -104,7 +104,7 @@
         }
     }
 
-    &__process {
+    &__process,&__branding-benefits {
         padding: 4rem 5rem;
 
         @include media('<phone') {

@@ -453,6 +453,51 @@ export const designProcess = [
     },
 ];
 
+export const brandingBenefits = [
+    {
+        id: 1,
+        number: "01.",
+        title: "Customer loyalty",
+        description:
+            "It all begins with a conversation. We'll delve into your business objectives, target audience, brand identity, and specific requirements for your website. This session helps us lay the foundation for a design that truly reflects your needs.",
+    },
+    {
+        id: 2,
+        number: "02.",
+        title: "Advertising impact",
+        description:
+            "Based on our discovery session, we develop a detailed plan and strategy for your website design. This includes defining the sitemap, user flows, key features, and overall design direction. We ensure every element is  aligned with your goals.",
+    },
+    {
+        id: 3,
+        number: "03.",
+        title: "Increased revenue",
+        description:
+            "Our talented designers craft the visual elements of your website, focusing on aesthetics, branding consistency, and user engagement. We pay close attention to typography,  imagery, and overall visual appeal to create an impactful online presence.",
+    },
+    {
+        id: 4,
+        number: "04.",
+        title: "Competitive advantage",
+        description:
+            "It all begins with a conversation. We'll delve into your business objectives, target audience, brand identity, and specific requirements for your website. This session helps us lay the foundation for a design that truly reflects your needs.",
+    },
+    {
+        id: 5,
+        number: "05.",
+        title: "Brand recognition",
+        description:
+            "Based on our discovery session, we develop a detailed plan and strategy for your website design. This includes defining the sitemap, user flows, key features, and overall design direction. We ensure every element is  aligned with your goals.",
+    },
+    {
+        id: 6,
+        number: "06.",
+        title: "Increased revenue",
+        description:
+            "Our talented designers craft the visual elements of your website, focusing on aesthetics, branding consistency, and user engagement. We pay close attention to typography,  imagery, and overall visual appeal to create an impactful online presence.",
+    },
+];
+
 export const serviceNav = [
     {
         id: "design",
