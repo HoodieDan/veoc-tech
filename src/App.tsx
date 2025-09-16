@@ -29,8 +29,11 @@ function App() {
 
                     <Route path="/services">
                         <Route index element={<Services />} />
-                        <Route path="design" element={<DesignService />} />
-                        <Route path="dev" element={<DevService />} />
+                        <Route path="web-design" element={<DesignService />} />
+                        <Route path="branding" element={<DevService />} />
+                        <Route path="web-dev" element={<DevService />} />
+                        <Route path="mobile-app" element={<DevService />} />
+                        <Route path="custom" element={<DevService />} />
                     </Route>
 
                     <Route path="/academy" element={<Academy />} />

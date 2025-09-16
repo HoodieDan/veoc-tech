@@ -442,28 +442,28 @@ export const serviceNav = [
         id: "design",
         label: "DESIGN",
         links: [
-            { label: "Web Design", href: "" },
-            { label: "Branding", href: "" },
+            { label: "Web Design", href: "/services/web-design" },
+            { label: "Branding", href: "/services/branding" },
         ],
     },
     {
         id: "development",
         label: "DEVELOMENT",
         links: [
-            { label: "No Code Web Development", href: "" },
-            { label: "Website Migration", href: "" },
-            { label: "FIgma to Framer", href: "" },
+            { label: "No Code Web Development", href: "/services/web-dev" },
+            { label: "Website Migration", href: "/services/web-dev" },
+            { label: "FIgma to Framer", href: "/services/web-dev" },
         ],
     },
     {
         id: "build",
         label: "BUILD",
         links: [
-            { label: "Mobile App", href: "" },
-            { label: "Custom MVP", href: "" },
-            { label: "Custom Code", href: "" },
-            { label: "Desktop & Mobile Apps", href: "" },
-            { label: "Website Migration", href: "" },
+            { label: "Mobile App", href: "/services/mobile-app" },
+            { label: "Custom MVP", href: "/services/custom" },
+            { label: "Custom Code", href: "/services/custom" },
+            { label: "Desktop & Mobile Apps", href: "/services/mobile-app" },
+            { label: "Website Migration", href: "/services/web-dev" },
         ],
     },
 ];
