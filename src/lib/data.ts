@@ -436,3 +436,34 @@ export const designProcess = [
             "We handle the deployment process and ensure your website goes live smoothly. After launch, we provide ongoing support, maintenance, and updates to keep your website performing at its best and growing with your business.",
     },
 ];
+
+export const serviceNav = [
+    {
+        id: "design",
+        label: "DESIGN",
+        links: [
+            { label: "Web Design", href: "/services/web-design" },
+            { label: "Branding", href: "/services/branding" },
+        ],
+    },
+    {
+        id: "development",
+        label: "DEVELOMENT",
+        links: [
+            { label: "No Code Web Development", href: "/services/web-dev" },
+            { label: "Website Migration", href: "/services/web-dev" },
+            { label: "FIgma to Framer", href: "/services/web-dev" },
+        ],
+    },
+    {
+        id: "build",
+        label: "BUILD",
+        links: [
+            { label: "Mobile App", href: "/services/mobile-app" },
+            { label: "Custom MVP", href: "/services/custom" },
+            { label: "Custom Code", href: "/services/custom" },
+            { label: "Desktop & Mobile Apps", href: "/services/mobile-app" },
+            { label: "Website Migration", href: "/services/web-dev" },
+        ],
+    },
+];
