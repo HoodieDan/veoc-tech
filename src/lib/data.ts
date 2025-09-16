@@ -103,6 +103,16 @@ import ARMTCMS5 from "../assets/images/pngs/armt-website-5.png";
 import ARMTCMS6 from "../assets/images/pngs/armt-website-6.png";
 import ARMTCMS7 from "../assets/images/pngs/armt-website-7.png";
 import ARMTCMS8 from "../assets/images/pngs/armt-website-8.png";
+// Service tools images
+import AngularImg from "@/assets/images/pngs/angularjs.png";
+import CSSImg from "@/assets/images/pngs/css.png";
+import GolangImg from "@/assets/images/pngs/golang.png";
+import HTMLImg from "@/assets/images/pngs/html.png";
+import LaravelImg from "@/assets/images/pngs/laravel.png";
+import MongoDBImg from "@/assets/images/pngs/mongodb.png";
+import PHPImg from "@/assets/images/pngs/php.png";
+import PythonImg from "@/assets/images/pngs/python.png";
+import ReactjsImg from "@/assets/images/pngs/reactjs.png";
 
 export const portfolio = [
     {
@@ -466,4 +476,17 @@ export const serviceNav = [
             { label: "Website Migration", href: "/services/web-dev" },
         ],
     },
+];
+
+export const serviceToolsImgs = [
+    ReactjsImg,
+    AngularImg,
+    GolangImg,
+    CSSImg,
+    HTMLImg,
+    PHPImg,
+    PythonImg,
+    GolangImg,
+    MongoDBImg,
+    LaravelImg,
 ];
