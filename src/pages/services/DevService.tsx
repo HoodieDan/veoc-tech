@@ -1,5 +1,5 @@
 import ServiceFAQ from "@/components/services/ServiceFAQ";
-import ServiceHero from "@/components/services/ServiceHero";
+import ServiceHeroCheckered from "@/components/services/ServiceHeroCheckered";
 import ServiceImpact from "@/components/services/ServiceImpact";
 import ServiceProcess from "@/components/services/ServiceProcess";
 import ServiceTestimonial from "@/components/services/ServiceTestimonial";
@@ -12,7 +12,7 @@ const DevService = () => {
 
     return (
         <section className="service">
-            <ServiceHero
+            <ServiceHeroCheckered
                 heading={
                     <h1 className="reveal__text">
                         More than just a<br /> look. We forge

@@ -119,6 +119,12 @@ import ChedarImg from "@/assets/images/pngs/chedar.png";
 import FleetWaterImg from "@/assets/images/pngs/fleet-water.png";
 import NexantImg from "@/assets/images/pngs/nexant.png";
 import TobyTeqImg from "@/assets/images/pngs/tobyteq.png";
+// No code benefits icons
+import HourGlass from "@/assets/images/pngs/hour-glass.png";
+import Lightning from "@/assets/images/pngs/lightning.png";
+import Robot from "@/assets/images/pngs/robot.png";
+import SpikedCheck from "@/assets/images/pngs/spiked-check.png";
+import SquareCoin from "@/assets/images/pngs/square-coin.png";
 
 export const portfolio = [
     {
@@ -324,7 +330,7 @@ export const portfolio = [
         name: "Chedar website",
         slug: "chedar-website",
         description:
-            "A French SaaS Website where we collaborated with the in-house team and our role was to focus on maintaining a heavy use of the company's brand colours while creating complementary visual assets that communicate the Products features. We worked only on it’s design and Website Assets only for this project",
+            "A French SaaS Website where we collaborated with the in-house team and our role was to focus on maintaining a heavy use of the company's brand colours while creating complementary visual assets that communicate the Products features. We worked only on it's design and Website Assets only for this project",
         tags: [
             "UI design",
             "Visual Assets",
@@ -511,7 +517,10 @@ export const serviceNav = [
         id: "development",
         label: "DEVELOMENT",
         links: [
-            { label: "No Code Web Development", href: "/services/web-dev" },
+            {
+                label: "No Code Web Development",
+                href: "/services/no-code-web-dev",
+            },
             { label: "Website Migration", href: "/services/web-dev" },
             { label: "FIgma to Framer", href: "/services/web-dev" },
         ],
@@ -548,4 +557,58 @@ export const ServiceClientsImgs = [
     ChedarImg,
     NexantImg,
     TobyTeqImg,
+];
+
+export const serviceRelations = [
+    {
+        problem:
+            "Feeling boxed in by your no-code tool when you need something custom?",
+        solution:
+            "No-code tools can't handle complex logic or fully unique features, making it hard to build beyond standard use cases.",
+    },
+    {
+        problem:
+            "Are you worried your no-code project won't keep up as your business grows?",
+        solution:
+            "As your website grows, performance and functionality can hit limits that no-code platforms weren't built to handle.",
+    },
+    {
+        problem:
+            "Concerned about being stuck on one platform with no easy way out?",
+        solution:
+            "Migrating away from a no-code tool is often difficult, as your data and design are tied to their proprietary system.",
+    },
+];
+
+export const noCodeBenefits = [
+    {
+        icon: Robot,
+        heading: "Platform flexibility\n strategy",
+        description:
+            "We build with flexibility, using tools that allows for exportable code, API access, and easy transitions if future platform changes are needed.",
+    },
+    {
+        icon: SquareCoin,
+        heading: "Custom integration\n and extensions.",
+        description:
+            "Develop tailored third-party connections or use plugins that go beyond native limitations, unlocking advanced features.",
+    },
+    {
+        icon: SpikedCheck,
+        heading: "Hybrid development\n approach",
+        description:
+            "Combine no-code with low-code or custom code where needed to extend functionality and overcome platform limitations.",
+    },
+    {
+        icon: HourGlass,
+        heading: "Scalable architecture\n planning",
+        description:
+            "We design with growth in mind. Optimize workflows, choose high performance tools, and prepare for seamless scaling or migration.",
+    },
+    {
+        icon: Lightning,
+        heading: "Ongoing technical support\n and advisory",
+        description:
+            "We provide clients with continuous optimization, performance monitoring, and strategy updates as their product evolves.",
+    },
 ];

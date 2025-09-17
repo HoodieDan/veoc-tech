@@ -1,21 +1,21 @@
 import ServiceVideo from "@/assets/images/pngs/service-video.png";
 
-interface IServiceHero extends React.ComponentProps<"div"> {
+interface IServiceHeroCheckered extends React.ComponentProps<"div"> {
     heading: React.ReactNode;
     tag: string;
 }
 
-const ServiceHero = ({ heading, tag }: IServiceHero) => {
+const ServiceHeroCheckered = ({ heading, tag }: IServiceHeroCheckered) => {
     return (
-        <div className="hero__section service__hero">
-            <div className="service__hero__left">
+        <div className="hero__section service__hero-checkered">
+            <div className="service__hero-checkered__left">
                 <div className="d-flex flex-column gap-4">
                     <div className="pill py-2 px-3">
                         <small className="fade__text">{tag}</small>
                     </div>
                     {heading}
                 </div>
-                <div className="service__hero__left__links">
+                <div className="service__hero-checkered__left__links">
                     <a href="" title="Get started now">
                         Get started now
                     </a>
@@ -25,7 +25,7 @@ const ServiceHero = ({ heading, tag }: IServiceHero) => {
                 </div>
             </div>
 
-            <div className="service__hero__right">
+            <div className="service__hero-checkered__right">
                 <img
                     src={ServiceVideo}
                     alt="Service Video"
@@ -36,4 +36,4 @@ const ServiceHero = ({ heading, tag }: IServiceHero) => {
     );
 };
 
-export default ServiceHero;
+export default ServiceHeroCheckered;
