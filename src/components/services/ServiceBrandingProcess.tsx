@@ -1,3 +1,5 @@
+import BrandingProcessImg from "@/assets/images/pngs/branding-process.png";
+
 const ServiceBrandingProcess = () => {
     return (
         <div className="service__branding-process d-flex flex-md-row flex-column align-items-md-center justify-content-between gap-5">
@@ -17,7 +19,7 @@ const ServiceBrandingProcess = () => {
 
             <div className="service__branding-process__right flex-shrink-0 w-md-50">
                 <img
-                    src="/src/assets/images/pngs/branding-process.png"
+                    src={BrandingProcessImg}
                     alt=""
                     className="img-fluid inset__reveal__image"
                 />
