@@ -1,12 +1,12 @@
 import { serviceRelations } from "@/lib/data";
 
-interface IServiceRelatey extends React.ComponentProps<"div"> {
+interface IServiceRelate extends React.ComponentProps<"div"> {
     heading: React.ReactNode;
 }
 
-const ServiceRelatey = ({ heading }: IServiceRelatey) => {
+const ServiceRelate = ({ heading }: IServiceRelate) => {
     return (
-        <div className="service__relate d-flex flex-column align-items-center gap-md-5 gap-4 mt-5">
+        <div className="service__relate d-flex flex-column align-items-center gap-md-5 gap-4">
             {heading}
 
             <div className="service__relate__items d-flex flex-column gap-4">
@@ -28,4 +28,4 @@ const ServiceRelatey = ({ heading }: IServiceRelatey) => {
     );
 };
 
-export default ServiceRelatey;
+export default ServiceRelate;

@@ -1,5 +1,6 @@
 import NoCodeHeroImg from "@/assets/images/pngs/no-code-hero-img.png";
 import ServiceHeroPlain from "@/components/services/ServiceHeroPlain";
+import ServiceNoCodeBenefits from "@/components/services/ServiceNoCodeBenefits";
 import ServiceRelate from "@/components/services/ServiceRelate";
 import { useGsapAnimations } from "@/hooks/useGsapAnimation";
 
@@ -39,6 +40,16 @@ const NoCodeDevService = () => {
                         <br className="d-md-inline d-none" /> Plug-and-Play.
                     </h3>
                 }
+            />
+
+            <ServiceNoCodeBenefits
+                heading={
+                    <h3 className="text-md-center reveal__text">
+                        We Know How Exactly
+                        <br className="d-md-inline d-none" /> to help you
+                    </h3>
+                }
+                tag="BENEFITS OF WORKING WITH US"
             />
         </section>
     );
