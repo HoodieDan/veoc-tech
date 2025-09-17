@@ -27,7 +27,8 @@
         width: fit-content;
     }
 
-    &__hero {
+    &__hero-checkered,
+    &__hero-plain {
         @include section-grid(12rem 5rem 4rem, 2);
         align-items: center;
 
@@ -48,7 +49,23 @@
                 &>:nth-child(1) {
                     @include btn-purple-gradient;
                 }
+            }
+        }
 
+        &__right {
+            display: flex;
+            justify-content: end;
+
+            img {
+                width: 100%;
+                box-shadow: 0px 56px 56px 0px rgba(121, 23, 206, 0.1), 0px 14px 31px 0px rgba(121, 23, 206, 0.1);
+            }
+        }
+    }
+
+    &__hero-checkered {
+        &__left {
+            &__links {
                 &>:nth-child(2) {
                     border-radius: 1rem;
                     font-weight: bold;
@@ -60,13 +77,37 @@
                 }
             }
         }
+    }
 
-        &__right {
-            display: flex;
-            justify-content: end;
+    &__hero-plain {
+        &__left {
+            gap: 2rem;
 
-            img {
-                box-shadow: 0px 56px 56px 0px rgba(121, 23, 206, 0.1), 0px 14px 31px 0px rgba(121, 23, 206, 0.1);
+            &__description {
+                color: rgb(236, 236, 236, 0.6);
+                font-size: 1.125rem;
+            }
+
+            &__tag {
+                color: #C9C0C0;
+            }
+
+            &__links {
+                &>:nth-child(2) {
+                    background: rgb(255, 255, 255, 0.1);
+                    border-radius: 1rem;
+                    font-weight: bold;
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.625rem;
+                    padding: 1rem 2rem;
+
+                    svg {
+                        width: 2rem;
+                    }
+                }
             }
         }
     }
@@ -104,7 +145,8 @@
         }
     }
 
-    &__process,&__branding-benefits {
+    &__process,
+    &__branding-benefits {
         padding: 4rem 5rem;
 
         @include media('<phone') {
@@ -298,6 +340,36 @@
                 .arrow {
                     img {
                         transform: scale(0.7);
+                    }
+                }
+            }
+        }
+    }
+
+    &__relate {
+        padding: 4rem 5rem;
+
+        @include media('<phone') {
+            padding: 4rem 1rem;
+        }
+
+        &__items {
+            &__item {
+                &__problem {
+                    font-weight: 300;
+                    width: 25%;
+
+                    @include media('<phone') {
+                        width: 100%;
+                    }
+                }
+
+                &__solution {
+                    font-weight: 400;
+                    width: 30%;
+
+                    @include media('<phone') {
+                        width: 100%;
                     }
                 }
             }

@@ -17,6 +17,7 @@ import Project from "./pages/Project";
 import BrandingService from "./pages/services/BrandingService";
 import DesignService from "./pages/services/DesignService";
 import DevService from "./pages/services/DevService";
+import NoCodeDevService from "./pages/services/NoCodeDevService";
 import Services from "./pages/services/Services";
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
                         <Route path="web-design" element={<DesignService />} />
                         <Route path="branding" element={<BrandingService />} />
                         <Route path="web-dev" element={<DevService />} />
+                        <Route
+                            path="no-code-web-dev"
+                            element={<NoCodeDevService />}
+                        />
                         <Route path="mobile-app" element={<DevService />} />
                         <Route path="custom" element={<DevService />} />
                     </Route>
